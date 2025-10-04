@@ -1,8 +1,20 @@
 <?php include 'header.php'; ?>
 
 <!-- Main Content Area -->
-<div class="home" style="padding: 100px; text-align: center;">
-    <h1>Welcome to TekInvent</h1>
+<div class="banner" style="background-image: url('http://localhost/invent/assets/images/home/home-banner.png');">
+    <div class="container">
+        <div class="row">
+            <div class="col-lg-6">
+                <div class="banner-inner">
+                    <h1>From concept to code <strong>we build apps</strong> that people love to use</h1>
+                    <p>This is dummy copy. It is not meant to be read. It has been placed here solely to demonstrate the
+                        look and feel
+                        of finished, typeset text.</p>
+                    <a href="#" class="btn btn-primary">Get Started</a>
+                </div>
+            </div>
+        </div>
+    </div>
 </div>
 <!-- Contact Section -->
 <section class="contact-section">

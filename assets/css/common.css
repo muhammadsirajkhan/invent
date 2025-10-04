@@ -258,7 +258,7 @@ h6 {
 
 p {
     margin-bottom: var(--spacing-md);
-    /* color: var(--text-dark); */
+    color: #757575;
     font-weight: var(--font-weight-light);
 }
 
