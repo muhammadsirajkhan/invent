@@ -523,6 +523,71 @@ section.contact-section::before {
     border: 2px solid var(--primary-color);
 }
 
+/* ============================================
+   CONTACT FORM 7 - CONTACT SECTION SPECIFIC
+   ============================================ */
+
+/* CF7 Input Fields in Contact Section */
+.contact-form-wrapper .wpcf7-form input[type="text"],
+.contact-form-wrapper .wpcf7-form input[type="email"],
+.contact-form-wrapper .wpcf7-form input[type="tel"],
+.contact-form-wrapper .wpcf7-form input[type="url"],
+.contact-form-wrapper .wpcf7-form input[type="number"],
+.contact-form-wrapper .wpcf7-form select {
+    height: 50px;
+    padding: 15px 20px;
+    font-size: var(--font-size-14);
+    background: #F5F5F5;
+    border: 1px solid transparent;
+    border-radius: 50px;
+}
+
+/* CF7 Textarea in Contact Section */
+.contact-form-wrapper .wpcf7-form textarea {
+    height: 150px;
+    padding: var(--spacing-16);
+    border-radius: 16px;
+    font-size: var(--font-size-14);
+}
+
+/* CF7 Submit Button in Contact Section */
+.contact-form-wrapper .wpcf7-submit {
+    height: 50px;
+    margin-top: 0 !important;
+    line-height: 1;
+    font-size: 16px;
+    border: 2px solid var(--primary-color) !important;
+}
+
+/* CF7 Two-Column Layout in Contact Form */
+.contact-form-wrapper .form-row-cf7 {
+    display: flex;
+    gap: var(--spacing-16);
+    margin-bottom: var(--spacing-16);
+}
+
+.contact-form-wrapper .form-row-cf7 > p {
+    flex: 1;
+    margin-bottom: 0;
+}
+
+/* CF7 Paragraph Spacing */
+.contact-form-wrapper .wpcf7-form > p {
+    margin-bottom: var(--spacing-16);
+}
+
+.contact-form-wrapper .wpcf7-form > p:last-of-type {
+    margin-bottom: 0;
+}
+
+/* CF7 Response Messages in Contact Form */
+.contact-form-wrapper .wpcf7-response-output {
+    margin: var(--spacing-16) 0 0 0;
+    padding: var(--spacing-12);
+    border-radius: 16px;
+    font-size: var(--font-size-14);
+}
+
 
 /* ============================================
    VARIABLES
