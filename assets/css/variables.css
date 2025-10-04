@@ -1,7 +1,7 @@
 /* CSS Variables */
 :root {
     /* Colors */
-    --primary-color: #479dcb;
+    --primary-color: #A866EC;
     --secondary-color: #253d5d;
     --accent-color: #3498db;
     --text-light: #ecf0f1;
@@ -15,32 +15,38 @@
     --danger-color: #e74c3c;
 
     /* Typography */
-    --font-primary: 'Proxima Nova Regular', Arial, sans-serif;
-    --font-bold: 'Proxima Nova Semibold', Arial, sans-serif;
-    --font-heading: 'LTC Bodoni 175 Pro', Georgia, serif;
-    --font-size-xs: 0.75rem;
-    /* 12px */
-    --font-size-sm: 0.875rem;
-    /* 14px */
-    --font-size-base: 1rem;
-    /* 16px */
-    --font-size-lg: 18px;
-    /* 18px */
-    --font-size-xl: 20px;
-    /* 20px */
-    --font-size-2xl: 22px;
-    --font-size-26: 26px;
-    --font-size-30: 30px;
-    /* 24px */
-    --font-size-3xl: 41px;
-    /* 30px */
-    --font-size-50: 50px;
-    --font-size-4xl: 85px;
-    /* 36px */
-    --font-size-5xl: 3rem;
-    /* 48px */
-    --font-size-6xl: 3.75rem;
-    /* 60px */
+    --font-primary: 'Nuckle', Arial, sans-serif;
+    --font-bold: 'Nuckle', Arial, sans-serif;
+    --font-heading: 'Nuckle', Arial, sans-serif;
+    
+    /* Font Sizes - Design System */
+    --font-size-12: 12px;
+    --font-size-14: 14px;
+    --font-size-16: 16px;
+    --font-size-18: 18px;
+    --font-size-20: 20px;
+    --font-size-24: 24px;
+    --font-size-28: 28px;
+    --font-size-32: 32px;
+    --font-size-36: 36px;
+    --font-size-42: 42px;
+    --font-size-48: 48px;
+    --font-size-52: 52px;
+    --font-size-60: 60px;
+    --font-size-72: 72px;
+    --font-size-85: 85px;
+    
+    /* Font Size Aliases (for convenience) */
+    --font-size-xs: var(--font-size-12);
+    --font-size-sm: var(--font-size-14);
+    --font-size-base: var(--font-size-16);
+    --font-size-lg: var(--font-size-18);
+    --font-size-xl: var(--font-size-20);
+    --font-size-2xl: var(--font-size-24);
+    --font-size-3xl: var(--font-size-32);
+    --font-size-4xl: var(--font-size-42);
+    --font-size-5xl: var(--font-size-52);
+    --font-size-6xl: var(--font-size-60);
 
     /* Font Weights */
     --font-weight-light: 300;
@@ -60,27 +66,38 @@
     --line-height-normal: 1.5;
     --line-height-relaxed: 1.75;
 
-    /* Spacing */
-    --spacing-xs: 4px;
-    /* 4px */
-    --spacing-sm: 8px;
-    /* 8px */
-    --spacing-md: 16px;
-    /* 16px */
-    --spacing-lg: 24px;
-    /* 24px */
-    --spacing-xl: 32px;
-    /* 32px */
-    --spacing-2xl: 40px;
-    /* 40px */
-    --spacing-3xl: 48px;
-    /* 48px */
-    --spacing-4xl: 64px;
-    /* 64px */
-    --spacing-5xl: 80px;
-    /* 80px */
-    --spacing-6xl: 96px;
-    /* 96px */
+    /* Spacing - Design System */
+    --spacing-4: 4px;
+    --spacing-8: 8px;
+    --spacing-12: 12px;
+    --spacing-16: 16px;
+    --spacing-20: 20px;
+    --spacing-24: 24px;
+    --spacing-28: 28px;
+    --spacing-32: 32px;
+    --spacing-36: 36px;
+    --spacing-40: 40px;
+    --spacing-48: 48px;
+    --spacing-52: 52px;
+    --spacing-56: 56px;
+    --spacing-60: 60px;
+    --spacing-64: 64px;
+    --spacing-72: 72px;
+    --spacing-80: 80px;
+    --spacing-96: 96px;
+    --spacing-120: 120px;
+    
+    /* Spacing Aliases (for convenience) */
+    --spacing-xs: var(--spacing-4);
+    --spacing-sm: var(--spacing-8);
+    --spacing-md: var(--spacing-16);
+    --spacing-lg: var(--spacing-24);
+    --spacing-xl: var(--spacing-32);
+    --spacing-2xl: var(--spacing-40);
+    --spacing-3xl: var(--spacing-48);
+    --spacing-4xl: var(--spacing-64);
+    --spacing-5xl: var(--spacing-80);
+    --spacing-6xl: var(--spacing-96);
 
     /* Border */
     --border-radius-sm: 4px;
