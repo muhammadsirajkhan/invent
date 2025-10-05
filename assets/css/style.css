@@ -217,9 +217,11 @@ HOME BANNER
     height: 100%;
     align-items: center;
 }
+
 .banner h1 {
     margin-bottom: var(--spacing-40);
 }
+
 .banner h1,
 .banner h1 strong {
     font-weight: 600;
@@ -233,7 +235,9 @@ HOME BANNER
 
 .banner h1 strong {
     color: var(--primary-color);
-}.banner-inner {
+}
+
+.banner-inner {
     max-width: 450px;
 }
 
@@ -566,17 +570,17 @@ section.contact-section::before {
     margin-bottom: var(--spacing-16);
 }
 
-.contact-form-wrapper .form-row-cf7 > p {
+.contact-form-wrapper .form-row-cf7>p {
     flex: 1;
     margin-bottom: 0;
 }
 
 /* CF7 Paragraph Spacing */
-.contact-form-wrapper .wpcf7-form > p {
+.contact-form-wrapper .wpcf7-form>p {
     margin-bottom: var(--spacing-16);
 }
 
-.contact-form-wrapper .wpcf7-form > p:last-of-type {
+.contact-form-wrapper .wpcf7-form>p:last-of-type {
     margin-bottom: 0;
 }
 
@@ -592,3 +596,81 @@ section.contact-section::before {
 /* ============================================
    VARIABLES
    ============================================ */
+
+.title-wrap h2,
+.title-wrap h2 strong {
+    font-weight: 600;
+}
+
+.title-wrap h2 {
+    font-size: var(--font-size-5xl);
+    text-transform: capitalize;
+}
+
+.title-wrap h2 strong {
+    color: var(--primary-color);
+}
+
+.title-wrap {
+    margin-bottom: var(--spacing-4xl);
+}
+
+.title-wrap .row {
+    align-items: center;
+}
+
+.title-wrap p {
+    font-size: var(--font-size-lg);
+}
+
+.ideas-section-inner {
+    aspect-ratio: 1169/518;
+    padding: var(--spacing-4xl);
+    background-position: center;
+    background-size: cover;
+    position: relative;
+}
+
+.ideas-section-inner .row {
+    height: 100%;
+    align-items: center;
+}
+
+.ideas-section-inner h3 {
+    font-size: var(--font-size-5xl);
+    font-weight: 600;
+    margin-bottom: var(--font-size-3xl);
+}
+
+.ideas-section-inner p {
+    color: #fff;
+    margin-bottom: var(--font-size-3xl);
+}
+
+
+.service-card {
+    background-color: #F5F5F5;
+    padding: var(--spacing-xl);
+    border-radius: 20px;
+    height: 100%;
+    clip-path: polygon(85% 0, 100% 25%, 100% 100%, 0 100%, 0 0);
+}
+
+.service-card .title {
+    display: flex;
+    align-items: center;
+    gap: 22px;
+    margin-bottom: 18px;
+}
+
+.service-card .title h3 {
+    margin: 0;
+    font-size: var(--font-size-lg);
+    font-weight: 600;
+}
+
+.service-card p {
+    font-size: var(--font-size-sm);
+    max-width: 300px;
+    line-height: 1.8;
+}

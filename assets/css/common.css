@@ -7,8 +7,8 @@
 
 hr {
     border-color: transparent;
-    margin-top: var(--spacing-6xl);
-    margin-bottom: var(--spacing-6xl);
+    margin-top: var(--spacing-2xl);
+    margin-bottom: var(--spacing-2xl);
 }
 
 .secondary-color {
