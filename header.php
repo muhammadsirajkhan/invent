@@ -24,7 +24,7 @@
     <div class="wrapper">
         <!-- Header Start -->
         <header class="header" style="background-image: url('http://localhost/invent/assets/images/header-bg.png');">
-            <nav class="navbar navbar-expand-xl navbar-light bg-white">
+            <nav class="navbar navbar-expand-xl navbar-light">
                 <div class="container">
                     <!-- Logo -->
                     <a class="navbar-brand" href="index.php">

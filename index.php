@@ -111,7 +111,7 @@ $services = [
             </div>
         </div>
         <div class="service-bottom">
-            <img src="assets/images/home/service-bottom.png" alt="Service Bottom Image">
+            <div class="image"><img src="assets/images/home/service-bottom.png" alt="Service Bottom Image"></div>
         </div>
     </div>
 </section>
