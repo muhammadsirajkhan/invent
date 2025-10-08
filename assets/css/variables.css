@@ -49,7 +49,7 @@
     --font-size-6xl: var(--font-size-60);
 
     /* Font Weights */
-    --font-weight-light: 300;
+    --font-weight-light: normal;
     /* Proxima Nova Light */
     --font-weight-normal: 400;
     /* Proxima Nova Regular */

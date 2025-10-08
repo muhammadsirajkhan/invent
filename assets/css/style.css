@@ -625,7 +625,7 @@ section.contact-section::before {
 
 .title-wrap h2,
 .title-wrap h2 strong {
-    font-weight: 600;
+    font-weight: bold;
 }
 
 .title-wrap h2 {
@@ -909,7 +909,7 @@ input#cf7-print-btn {
 
 .vision-card h3 {
     font-size: var(--font-size-3xl);
-    font-weight: 600;
+    font-weight: bold;
 }.vision-card p{
     font-size: var(--font-size-base);
     color: #000;
