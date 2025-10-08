@@ -212,7 +212,7 @@ h5,
 h6,
 .sub-title {
     font-family: var(--font-heading);
-    /* font-weight: var(--font-weight-semibold); */
+    font-weight: bold;
     line-height: var(--line-height-one);
     margin-bottom: var(--spacing-md);
     /* color: var(--text-dark); */
