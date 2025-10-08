@@ -15,44 +15,44 @@ document.addEventListener("DOMContentLoaded", function () {
 
 // Mobile Sidebar functionality
 function initMobileSidebar() {
-  const mobileMenuToggle = document.getElementById('mobileMenuToggle');
-  const mobileSidebar = document.getElementById('mobileSidebar');
-  const sidebarClose = document.getElementById('sidebarClose');
-  const sidebarOverlay = document.getElementById('sidebarOverlay');
+  const mobileMenuToggle = document.getElementById("mobileMenuToggle");
+  const mobileSidebar = document.getElementById("mobileSidebar");
+  const sidebarClose = document.getElementById("sidebarClose");
+  const sidebarOverlay = document.getElementById("sidebarOverlay");
   const body = document.body;
 
   // Open sidebar
   if (mobileMenuToggle) {
-    mobileMenuToggle.addEventListener('click', function() {
-      mobileSidebar.classList.add('active');
-      sidebarOverlay.classList.add('active');
-      body.classList.add('sidebar-open');
+    mobileMenuToggle.addEventListener("click", function () {
+      mobileSidebar.classList.add("active");
+      sidebarOverlay.classList.add("active");
+      body.classList.add("sidebar-open");
     });
   }
 
   // Close sidebar
   function closeSidebar() {
-    mobileSidebar.classList.remove('active');
-    sidebarOverlay.classList.remove('active');
-    body.classList.remove('sidebar-open');
+    mobileSidebar.classList.remove("active");
+    sidebarOverlay.classList.remove("active");
+    body.classList.remove("sidebar-open");
   }
 
   if (sidebarClose) {
-    sidebarClose.addEventListener('click', closeSidebar);
+    sidebarClose.addEventListener("click", closeSidebar);
   }
 
   if (sidebarOverlay) {
-    sidebarOverlay.addEventListener('click', closeSidebar);
+    sidebarOverlay.addEventListener("click", closeSidebar);
   }
 
   // Close sidebar when clicking on menu links
-  const mobileMenuLinks = document.querySelectorAll('.mobile-menu a');
-  mobileMenuLinks.forEach(link => {
-    link.addEventListener('click', closeSidebar);
+  const mobileMenuLinks = document.querySelectorAll(".mobile-menu a");
+  mobileMenuLinks.forEach((link) => {
+    link.addEventListener("click", closeSidebar);
   });
 
   // Close sidebar on window resize if screen becomes larger
-  window.addEventListener('resize', function() {
+  window.addEventListener("resize", function () {
     if (window.innerWidth >= 992) {
       closeSidebar();
     }
@@ -335,34 +335,35 @@ function showNotification(message, type = "info") {
 }
 
 // Swiper initialization (if needed for future sliders)
-function initSwiper() {
-  // Example Swiper configuration
-  const swiper = new Swiper(".swiper", {
-    slidesPerView: 1,
-    spaceBetween: 30,
-    loop: true,
-    autoplay: {
-      delay: 5000,
-      disableOnInteraction: false,
-    },
-    pagination: {
-      el: ".swiper-pagination",
-      clickable: true,
-    },
-    navigation: {
-      nextEl: ".swiper-button-next",
-      prevEl: ".swiper-button-prev",
-    },
-    breakpoints: {
-      768: {
-        slidesPerView: 2,
-      },
-      1024: {
-        slidesPerView: 3,
-      },
-    },
-  });
-}
+// function initSwiper() {
+//   // Example Swiper configuration
+
+//   // const swiper = new Swiper(".swiper", {
+//   //   slidesPerView: 1,
+//   //   spaceBetween: 30,
+//   //   loop: true,
+//   //   autoplay: {
+//   //     delay: 5000,
+//   //     disableOnInteraction: false,
+//   //   },
+//   //   pagination: {
+//   //     el: ".swiper-pagination",
+//   //     clickable: true,
+//   //   },
+//   //   navigation: {
+//   //     nextEl: ".swiper-button-next",
+//   //     prevEl: ".swiper-button-prev",
+//   //   },
+//   //   breakpoints: {
+//   //     768: {
+//   //       slidesPerView: 2,
+//   //     },
+//   //     1024: {
+//   //       slidesPerView: 3,
+//   //     },
+//   //   },
+//   // });
+// }
 
 // Handle phone number formatting
 function formatPhoneNumber(input) {
@@ -476,7 +477,7 @@ function initSwiper() {
     //     delay: 3000,
     //     disableOnInteraction: false,
     // },
-    
+
     // Primary pagination - fraction
     pagination: {
       el: ".banner-pagination",
@@ -495,21 +496,25 @@ function initSwiper() {
       },
       slideChange: function () {
         updateCustomBullets(this);
-      }
-    }
+      },
+    },
   });
 
   // Function to create custom bullet pagination
   function createCustomBullets(swiper) {
-    const bulletsContainer = document.querySelector('.banner-pagination-bullets');
+    const bulletsContainer = document.querySelector(
+      ".banner-pagination-bullets"
+    );
     if (!bulletsContainer) return;
-    
-    bulletsContainer.innerHTML = '';
-    
+
+    bulletsContainer.innerHTML = "";
+
     for (let i = 0; i < swiper.slides.length; i++) {
-      const bullet = document.createElement('span');
-      bullet.className = `custom-bullet ${i === swiper.realIndex ? 'active' : ''}`;
-      bullet.addEventListener('click', () => {
+      const bullet = document.createElement("span");
+      bullet.className = `custom-bullet ${
+        i === swiper.realIndex ? "active" : ""
+      }`;
+      bullet.addEventListener("click", () => {
         swiper.slideToLoop(i);
       });
       bulletsContainer.appendChild(bullet);
@@ -518,11 +523,36 @@ function initSwiper() {
 
   // Function to update bullet pagination
   function updateCustomBullets(swiper) {
-    const bullets = document.querySelectorAll('.custom-bullet');
+    const bullets = document.querySelectorAll(".custom-bullet");
     bullets.forEach((bullet, index) => {
-      bullet.classList.toggle('active', index === swiper.realIndex);
+      bullet.classList.toggle("active", index === swiper.realIndex);
     });
   }
+
+  const visionSlider = new Swiper(".vision-slider", {
+    slidesPerView: 1,
+    spaceBetween: 30,
+    loop: false,
+    // autoplay: {
+    //   delay: 5000,
+    //   disableOnInteraction: false,
+    // },
+    navigation: {
+      nextEl: ".vision-button-next",
+      prevEl: ".vision-button-prev",
+    },
+    breakpoints: {
+      768: {
+        slidesPerView: 2,
+      },
+      1024: {
+        slidesPerView: 3,
+      },
+      1920: {
+        slidesPerView: 2.3,
+      },
+    },
+  });
 }
 
 // Export functions for potential use in other scripts
