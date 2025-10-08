@@ -9,6 +9,7 @@ document.addEventListener("DOMContentLoaded", function () {
   initNewsletterForm();
   initAnimations();
   initSwiper();
+  initTableOfContents();
 
   console.log("TekInvent website loaded successfully!");
 });
@@ -553,6 +554,30 @@ function initSwiper() {
       },
     },
   });
+  const blogSlider = new Swiper(".blog-slider", {
+    slidesPerView: 1,
+    spaceBetween: 30,
+    loop: false,
+    // autoplay: {
+    //   delay: 5000,
+    //   disableOnInteraction: false,
+    // },
+    navigation: {
+      nextEl: ".blog-button-next",
+      prevEl: ".blog-button-prev",
+    },
+    breakpoints: {
+      768: {
+        slidesPerView: 2,
+      },
+      1024: {
+        slidesPerView: 3,
+      },
+      1920: {
+        slidesPerView: 3,
+      },
+    },
+  });
 }
 
 // Export functions for potential use in other scripts
@@ -562,3 +587,106 @@ window.DrCindyWebsite = {
   formatPhoneNumber,
   isValidEmail,
 };
+
+// ============================================
+// TABLE OF CONTENTS FUNCTIONALITY
+// ============================================
+function initTableOfContents() {
+  const tocNav = document.getElementById("table-of-contents");
+  const blogContent = document.querySelector(".blog-content");
+
+  if (!tocNav || !blogContent) {
+    return; // Exit if elements don't exist on this page
+  }
+
+  // Get all h2 headings from blog content (direct children only)
+  const headings = blogContent.querySelectorAll(".blog-content > h2");
+
+  if (headings.length === 0) {
+    return; // Exit if no headings found
+  }
+
+  // Generate unique IDs for headings and create TOC links
+  headings.forEach((heading, index) => {
+    // Create a unique ID from the heading text
+    const headingText = heading.textContent.trim();
+    const headingId = `section-${index + 1}-${headingText
+      .toLowerCase()
+      .replace(/[^\w\s-]/g, "")
+      .replace(/\s+/g, "-")
+      .substring(0, 50)}`;
+
+    // Add ID to the heading
+    heading.id = headingId;
+
+    // Create TOC link
+    const tocLink = document.createElement("a");
+    tocLink.href = `#${headingId}`;
+    tocLink.className = "toc-link";
+    tocLink.textContent = headingText;
+
+    // Add click event for smooth scrolling
+    tocLink.addEventListener("click", function (e) {
+      e.preventDefault();
+      const targetSection = document.getElementById(headingId);
+      if (targetSection) {
+        const offsetTop = targetSection.offsetTop - 0; // Adjust for fixed header + spacing
+        window.scrollTo({
+          top: offsetTop,
+          behavior: "smooth",
+        });
+
+        // Update active state immediately
+        setTimeout(updateTOCActiveState, 100);
+      }
+    });
+
+    // Append link to TOC
+    tocNav.appendChild(tocLink);
+  });
+
+  // Update active state on scroll
+  window.addEventListener("scroll", updateTOCActiveState);
+
+  // Initial active state check
+  updateTOCActiveState();
+}
+
+// Update active state of TOC links based on scroll position
+function updateTOCActiveState() {
+  const tocLinks = document.querySelectorAll(".toc-link");
+  const blogContent = document.querySelector(".blog-content");
+
+  if (!blogContent || tocLinks.length === 0) {
+    return;
+  }
+
+  const headings = blogContent.querySelectorAll(".blog-content > h2");
+  let currentActiveIndex = -1;
+
+  // Find which section is currently in view or has been passed
+  headings.forEach((heading, index) => {
+    const rect = heading.getBoundingClientRect();
+    // If heading is above the viewport threshold, it has been passed
+    if (rect.top <= 150) {
+      currentActiveIndex = index;
+    }
+  });
+
+  // If we're at the bottom of the page, activate the last section
+  if (
+    window.innerHeight + window.scrollY >=
+    document.documentElement.scrollHeight - 100
+  ) {
+    currentActiveIndex = headings.length - 1;
+  }
+
+  // Update active class on TOC links - activate current and all previous
+  tocLinks.forEach((link, index) => {
+    if (index <= currentActiveIndex && currentActiveIndex >= 0) {
+      link.classList.add("active");
+    } else {
+      link.classList.remove("active");
+    }
+  });
+}
