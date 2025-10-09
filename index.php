@@ -121,7 +121,7 @@ $services = [
         <div class="title-wrap">
             <div class="row">
                 <div class="col-lg-6 col-12">
-                    <h2>Turning Vision into <strong>Reality.</strong></h2>
+                    <h2>Turning Vision <br>into <strong>Reality.</strong></h2>
                 </div>
                 <div class="col-lg-6 col-12">
                     <p>This is dummy copy. It is not meant to be read. It has been placed here solely to demonstrate the
@@ -208,21 +208,23 @@ $services = [
                             <a href="#" class="btn btn-primary">View Case Study</a>
                         </div>
                     </div>
-                    
-                    
-                    
+
+
+
                 </div>
 
             </div>
             <div class="vision-btn-wrap">
                 <div class="vision-button-next">
-<svg width="10" height="17" viewBox="0 0 10 17" fill="none" xmlns="http://www.w3.org/2000/svg">
-<path d="M1.33398 15.5L8.33398 8.5L1.33398 1.5" stroke="white" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
-</svg>
-</div>
+                    <svg width="10" height="17" viewBox="0 0 10 17" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <path d="M1.33398 15.5L8.33398 8.5L1.33398 1.5" stroke="white" stroke-width="2"
+                            stroke-linecap="round" stroke-linejoin="round" />
+                    </svg>
+                </div>
                 <div class="vision-button-prev">
                     <svg width="10" height="17" viewBox="0 0 10 17" fill="none" xmlns="http://www.w3.org/2000/svg">
-                        <path d="M8.66602 15.5L1.66602 8.5L8.66602 1.5" stroke="white" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                        <path d="M8.66602 15.5L1.66602 8.5L8.66602 1.5" stroke="white" stroke-width="2"
+                            stroke-linecap="round" stroke-linejoin="round" />
                     </svg>
                 </div>
             </div>
@@ -249,12 +251,12 @@ $services = [
         <div class="design-outer">
             <div class="row">
                 <div class="col-lg-5 col-12">
-                    <div class="design-left">
-                        <img src="assets/images/home/design-image.png" alt="Design Image 1" class="design-img">
+                    <div class="design-left edge edge-base edge-primary">
+                        <img src="assets/images/sample-2.png" alt="Design Image 1" class="design-img">
                     </div>
                 </div>
                 <div class="col-lg-7 col-12">
-                    <ul class="nav nav-tabs" id="myTab" role="tablist">
+                    <ul class="nav nav-tabs design-tab" id="myTab" role="tablist">
                         <li class="nav-item" role="presentation">
                             <button class="nav-link active" id="home-tab" data-bs-toggle="tab"
                                 data-bs-target="#home-tab-pane" type="button" role="tab" aria-controls="home-tab-pane"
@@ -272,7 +274,7 @@ $services = [
                         </li>
 
                     </ul>
-                    <div class="tab-content" id="myTabContent">
+                    <div class="tab-content design-content" id="myTabContent">
                         <div class="tab-pane fade show active" id="home-tab-pane" role="tabpanel"
                             aria-labelledby="home-tab" tabindex="0">
                             <div class="content">
@@ -300,13 +302,14 @@ $services = [
                                 <a href="#" class="btn btn-primary">Get Started</a>
                             </div>
                         </div>
+                        <img src="assets/images/shade-tabs.png" class="design-shade" alt="">
                     </div>
                 </div>
             </div>
         </div>
     </div>
 </section>
-
+<hr>
 <section class="modal-section">
     <div class="container">
         <div class="title-wrap">
@@ -325,8 +328,8 @@ $services = [
             <div class="row">
                 <div class="col-lg-4 col-12">
                     <div class="modal-card">
-                        <div class="icon">
-                            <img src="assets/images/home/m1.png" alt="">
+                        <div class="icon edge edge-base">
+                            <img src="assets/images/sample.png" alt="">
                         </div>
                         <h3>Project Based Development</h3>
                         <p>This is dummy copy. It is not meant to be read. It has been placed here solely to demonstrate
@@ -358,13 +361,14 @@ $services = [
                 </div>
             </div>
         </div>
-        <div class="modal-bottom">
+        <div class="modal-bottom text-center">
             <a href="#" class="btn btn-primary">Book a Free Consultation</a>
         </div>
     </div>
 </section>
 
 <section class="success-section">
+    <div class="container"><span class="border-top"></span></div>
     <div class="container">
         <div class="title-wrap">
             <div class="row">
@@ -375,25 +379,27 @@ $services = [
                     <a href="#" class="btn btn-primary">Get Started</a>
                 </div>
                 <div class="col-lg-6 col-12">
-                    <div class="success-card">
-                        <div class="left">
-                            <span class="number">05</span>
-                            <span class="content">Experienced Years</span>
+                    <div class="success-card-wrap">
+                        <div class="success-card edge edge-base edge-grey edge-primary">
+                            <div class="left">
+                                <span class="number">05</span>
+                                <span class="content">Experienced Years</span>
+                            </div>
                         </div>
-                    </div>
-                    <div class="success-card">
-                        <div class="left">
-                            <span class="number">30+</span>
-                            <span class="content">Specialized Experts</span>
+                        <div class="success-card edge edge-base edge-grey edge-primary">
+                            <div class="left">
+                                <span class="number">30+</span>
+                                <span class="content">Specialized Experts</span>
+                            </div>
                         </div>
-                    </div>
-                    <div class="success-card">
-                        <div class="left">
-                            <span class="number">5000+</span>
-                            <span class="content">Satisfied Customers</span>
-                        </div>
-                        <div class="right">
-                            <img src="assets/images/home/ss.png" alt="Satisfied Customers">
+                        <div class="success-card edge edge-base edge-grey edge-primary">
+                            <div class="left">
+                                <span class="number">5000+</span>
+                                <span class="content">Satisfied Customers</span>
+                            </div>
+                            <div class="right">
+                                <img src="assets/images/home/ss.png" alt="Satisfied Customers">
+                            </div>
                         </div>
                     </div>
                 </div>
@@ -401,6 +407,7 @@ $services = [
         </div>
     </div>
 </section>
+<hr>
 <section class="article-section">
     <div class="container">
         <div class="title-wrap">
