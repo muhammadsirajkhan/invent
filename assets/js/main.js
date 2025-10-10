@@ -659,8 +659,8 @@ function initSwiper() {
     function getMaxSlideIndex() {
       const slidesPerView = industrySwiper.params.slidesPerView;
       const totalSlides = industrySwiper.slides.length;
-      // Max index is total slides minus visible slides
-      const maxIndex = Math.max(0, totalSlides - Math.ceil(slidesPerView));
+      // Max index is total slides minus visible slides (use exact value for fractional slidesPerView)
+      const maxIndex = Math.max(0, totalSlides - slidesPerView);
       console.log("📊 Max slide index calculated:", maxIndex, "(Total:", totalSlides, "- Visible:", slidesPerView, ")");
       return maxIndex;
     }
