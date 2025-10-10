@@ -554,6 +554,54 @@ function initSwiper() {
       },
     },
   });
+  const clientsSlider = new Swiper(".clients-slider", {
+    slidesPerView: 1,
+    spaceBetween: 20,
+    loop: false,
+    // autoplay: {
+    //   delay: 5000,
+    //   disableOnInteraction: false,
+    // },
+    navigation: {
+      nextEl: ".clients-button-next",
+      prevEl: ".clients-button-prev",
+    },
+    breakpoints: {
+      768: {
+        slidesPerView: 1,
+      },
+      1024: {
+        slidesPerView: 1,
+      },
+      1920: {
+        slidesPerView: 2,
+      },
+    },
+  });
+  const awardSlider = new Swiper(".award-slider", {
+    slidesPerView: 1,
+    spaceBetween: 30,
+    loop: false,
+    // autoplay: {
+    //   delay: 5000,
+    //   disableOnInteraction: false,
+    // },
+    navigation: {
+      nextEl: ".awards-button-next",
+      prevEl: ".awards-button-prev",
+    },
+    breakpoints: {
+      768: {
+        slidesPerView: 1,
+      },
+      1024: {
+        slidesPerView: 3,
+      },
+      1920: {
+        slidesPerView: 5,
+      },
+    },
+  });
   const blogSlider = new Swiper(".blog-slider", {
     slidesPerView: 1,
     spaceBetween: 30,
@@ -578,6 +626,93 @@ function initSwiper() {
       },
     },
   });
+
+
+
+  // Initialize Swiper
+const industrySwiper = new Swiper(".industry-slider", {
+  loop: false,
+  slidesPerView: 3.8,
+  spaceBetween: 10
+});
+
+// Draggable element control
+const handle = document.querySelector(".draggable-handle");
+const draggableControl = document.querySelector(".draggable-control");
+
+let isDragging = false;
+let startX = 0;
+let initialLeft = 0;
+
+// Number of slides and handle movement factor
+const totalSlides = industrySwiper.slides.length - 1;
+const controlWidth = draggableControl.offsetWidth;
+const handleWidth = handle.offsetWidth;
+const maxHandleLeft = controlWidth - handleWidth;
+
+function moveHandleToSlide(slideIndex) {
+  const percentage = slideIndex / totalSlides;
+  const newLeft = percentage * maxHandleLeft;
+  handle.style.left = `${newLeft}px`;
+}
+
+handle.addEventListener("mousedown", (e) => {
+  isDragging = true;
+  startX = e.clientX;
+  initialLeft = handle.offsetLeft;
+  document.body.style.cursor = "grabbing";
+});
+
+document.addEventListener("mousemove", (e) => {
+  if (!isDragging) return;
+  const deltaX = e.clientX - startX;
+  let newLeft = initialLeft + deltaX;
+
+  // Limit the movement within the draggable control
+  if (newLeft < 0) newLeft = 0;
+  if (newLeft > maxHandleLeft) newLeft = maxHandleLeft;
+
+  handle.style.left = `${newLeft}px`;
+
+  // Control IndustrySwiper based on handle position
+  const percentage = newLeft / maxHandleLeft;
+  const activeSlideIndex = Math.round(percentage * totalSlides);
+
+  // Temporarily disable the slideChange event while dragging
+  industrySwiper.off("slideChange");
+  industrySwiper.slideTo(activeSlideIndex);
+});
+
+document.addEventListener("mouseup", () => {
+  isDragging = false;
+  document.body.style.cursor = "default";
+
+  // Re-enable the slideChange event after dragging is complete
+  industrySwiper.on("slideChange", () => {
+    moveHandleToSlide(industrySwiper.activeIndex);
+  });
+});
+
+// // Chevrons for navigation
+// document.querySelector(".arrow-left").addEventListener("click", () => {
+//   if (industrySwiper.activeIndex > 0) {
+//     industrySwiper.slidePrev();
+//     moveHandleToSlide(industrySwiper.activeIndex); // Move handle with slide
+//   }
+// });
+
+// document.querySelector(".arrow-right").addEventListener("click", () => {
+//   if (industrySwiper.activeIndex < totalSlides) {
+//     industrySwiper.slideNext();
+//     moveHandleToSlide(industrySwiper.activeIndex); // Move handle with slide
+//   }
+// });
+
+// Update the draggable handle when the slide changes programmatically
+industrySwiper.on("slideChange", () => {
+  moveHandleToSlide(industrySwiper.activeIndex);
+});
+
 }
 
 // Export functions for potential use in other scripts
