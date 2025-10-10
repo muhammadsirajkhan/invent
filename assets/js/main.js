@@ -756,12 +756,14 @@ function initSwiper() {
       isDragging = false;
       document.body.style.cursor = "default";
       handle.style.cursor = "grab";
-      handle.style.transition = "left 0.1s ease";
+      
+      // Don't add transition or snap - keep handle where it was released
+      // handle.style.transition = "left 0.1s ease";
 
       // Re-attach event handler after drag
       setTimeout(() => {
-        // Ensure we're on the correct slide
-        moveHandleToSlide(industrySwiper.activeIndex);
+        // Don't move handle - keep it at current position to avoid jerk
+        // moveHandleToSlide(industrySwiper.activeIndex);
         
         // Re-define and attach the handler
         slideChangeHandler = () => {
