@@ -628,90 +628,194 @@ function initSwiper() {
   });
 
 
+  // Initialize Industry Swiper with draggable control
+  const handle = document.querySelector(".draggable-handle");
+  const draggableControl = document.querySelector(".draggable-control");
 
-  // Initialize Swiper
-const industrySwiper = new Swiper(".industry-slider", {
-  loop: false,
-  slidesPerView: 3.8,
-  spaceBetween: 10
-});
+  // Only initialize if elements exist
+  if (handle && draggableControl) {
+    const industrySwiper = new Swiper(".industry-slider", {
+      loop: false,
+      slidesPerView: 3.8,
+      spaceBetween: 10,
+      resistanceRatio: 0,
+      allowTouchMove: false,  // Disable direct slider dragging
+      simulateTouch: false,   // Disable mouse drag on slider
+      touchRatio: 0           // Disable touch sensitivity on slider
+    });
 
-// Draggable element control
-const handle = document.querySelector(".draggable-handle");
-const draggableControl = document.querySelector(".draggable-control");
+    console.log("🎯 Industry Swiper initialized:", {
+      totalSlides: industrySwiper.slides.length,
+      slidesPerView: industrySwiper.params.slidesPerView,
+      allowTouchMove: industrySwiper.params.allowTouchMove
+    });
 
-let isDragging = false;
-let startX = 0;
-let initialLeft = 0;
+    let isDragging = false;
+    let startX = 0;
+    let initialLeft = 0;
+    let slideChangeHandler = null;
 
-// Number of slides and handle movement factor
-const totalSlides = industrySwiper.slides.length - 1;
-const controlWidth = draggableControl.offsetWidth;
-const handleWidth = handle.offsetWidth;
-const maxHandleLeft = controlWidth - handleWidth;
+    // Calculate max slide index accounting for visible slides
+    function getMaxSlideIndex() {
+      const slidesPerView = industrySwiper.params.slidesPerView;
+      const totalSlides = industrySwiper.slides.length;
+      // Max index is total slides minus visible slides
+      const maxIndex = Math.max(0, totalSlides - Math.ceil(slidesPerView));
+      console.log("📊 Max slide index calculated:", maxIndex, "(Total:", totalSlides, "- Visible:", slidesPerView, ")");
+      return maxIndex;
+    }
 
-function moveHandleToSlide(slideIndex) {
-  const percentage = slideIndex / totalSlides;
-  const newLeft = percentage * maxHandleLeft;
-  handle.style.left = `${newLeft}px`;
-}
+    // Get current control dimensions
+    function getControlDimensions() {
+      return {
+        controlWidth: draggableControl.offsetWidth,
+        handleWidth: handle.offsetWidth,
+        maxHandleLeft: draggableControl.offsetWidth - handle.offsetWidth
+      };
+    }
 
-handle.addEventListener("mousedown", (e) => {
-  isDragging = true;
-  startX = e.clientX;
-  initialLeft = handle.offsetLeft;
-  document.body.style.cursor = "grabbing";
-});
+    // Move handle to specific slide position
+    function moveHandleToSlide(slideIndex) {
+      const maxSlideIndex = getMaxSlideIndex();
+      const dimensions = getControlDimensions();
+      
+      if (maxSlideIndex === 0 || dimensions.maxHandleLeft <= 0) {
+        handle.style.left = "0px";
+        return;
+      }
 
-document.addEventListener("mousemove", (e) => {
-  if (!isDragging) return;
-  const deltaX = e.clientX - startX;
-  let newLeft = initialLeft + deltaX;
+      const percentage = slideIndex / maxSlideIndex;
+      const newLeft = percentage * dimensions.maxHandleLeft;
+      handle.style.left = `${Math.max(0, Math.min(newLeft, dimensions.maxHandleLeft))}px`;
+    }
 
-  // Limit the movement within the draggable control
-  if (newLeft < 0) newLeft = 0;
-  if (newLeft > maxHandleLeft) newLeft = maxHandleLeft;
+    // Mouse down event
+    handle.addEventListener("mousedown", (e) => {
+      isDragging = true;
+      startX = e.clientX;
+      initialLeft = handle.offsetLeft;
+      document.body.style.cursor = "grabbing";
+      handle.style.cursor = "grabbing";
+      handle.style.transition = "none";
+      e.preventDefault();
+      console.log("🟢 Drag started at X:", startX);
+    });
 
-  handle.style.left = `${newLeft}px`;
+    // Mouse move event
+    document.addEventListener("mousemove", (e) => {
+      if (!isDragging) return;
+      
+      const deltaX = e.clientX - startX;
+      const dimensions = getControlDimensions();
+      let newLeft = initialLeft + deltaX;
 
-  // Control IndustrySwiper based on handle position
-  const percentage = newLeft / maxHandleLeft;
-  const activeSlideIndex = Math.round(percentage * totalSlides);
+      // Limit movement within boundaries
+      newLeft = Math.max(0, Math.min(newLeft, dimensions.maxHandleLeft));
+      handle.style.left = `${newLeft}px`;
 
-  // Temporarily disable the slideChange event while dragging
-  industrySwiper.off("slideChange");
-  industrySwiper.slideTo(activeSlideIndex);
-});
+      // Calculate corresponding slide index and position
+      const maxSlideIndex = getMaxSlideIndex();
+      
+      console.log("🔵 Dragging - newLeft:", newLeft, "maxHandleLeft:", dimensions.maxHandleLeft, "maxSlideIndex:", maxSlideIndex);
+      
+      if (dimensions.maxHandleLeft > 0 && maxSlideIndex > 0) {
+        const percentage = newLeft / dimensions.maxHandleLeft;
+        
+        // Use continuous position instead of rounded index for smooth movement
+        const exactSlidePosition = percentage * maxSlideIndex;
+        const activeSlideIndex = Math.round(exactSlidePosition);
 
-document.addEventListener("mouseup", () => {
-  isDragging = false;
-  document.body.style.cursor = "default";
+        console.log("🟡 Calculated - percentage:", percentage, "exactPosition:", exactSlidePosition, "roundedIndex:", activeSlideIndex, "current:", industrySwiper.activeIndex);
 
-  // Re-enable the slideChange event after dragging is complete
-  industrySwiper.on("slideChange", () => {
-    moveHandleToSlide(industrySwiper.activeIndex);
-  });
-});
+        // Remove event handler during drag to prevent conflicts
+        if (slideChangeHandler) {
+          industrySwiper.off("slideChange", slideChangeHandler);
+          slideChangeHandler = null;
+        }
+        
+        // Get slide width and calculate exact translate position
+        const slideWidth = industrySwiper.slides[0].offsetWidth + industrySwiper.params.spaceBetween;
+        const translateValue = -(exactSlidePosition * slideWidth);
+        
+        // Directly set the transform for smooth continuous movement
+        industrySwiper.setTranslate(translateValue);
+        industrySwiper.updateActiveIndex();
+        industrySwiper.updateSlidesClasses();
+        
+        console.log("✅ Slider translate set to:", translateValue, "slideWidth:", slideWidth);
+      } else {
+        console.log("❌ Not sliding - maxHandleLeft:", dimensions.maxHandleLeft, "maxSlideIndex:", maxSlideIndex);
+      }
+    });
 
-// // Chevrons for navigation
-// document.querySelector(".arrow-left").addEventListener("click", () => {
-//   if (industrySwiper.activeIndex > 0) {
-//     industrySwiper.slidePrev();
-//     moveHandleToSlide(industrySwiper.activeIndex); // Move handle with slide
-//   }
-// });
+    // Mouse up event
+    document.addEventListener("mouseup", () => {
+      if (!isDragging) return;
+      
+      console.log("🔴 Drag ended");
+      isDragging = false;
+      document.body.style.cursor = "default";
+      handle.style.cursor = "grab";
+      handle.style.transition = "left 0.1s ease";
 
-// document.querySelector(".arrow-right").addEventListener("click", () => {
-//   if (industrySwiper.activeIndex < totalSlides) {
-//     industrySwiper.slideNext();
-//     moveHandleToSlide(industrySwiper.activeIndex); // Move handle with slide
-//   }
-// });
+      // Re-attach event handler after drag
+      setTimeout(() => {
+        // Ensure we're on the correct slide
+        moveHandleToSlide(industrySwiper.activeIndex);
+        
+        // Re-define and attach the handler
+        slideChangeHandler = () => {
+          console.log("🔄 Slide changed to:", industrySwiper.activeIndex);
+          moveHandleToSlide(industrySwiper.activeIndex);
+        };
+        industrySwiper.on("slideChange", slideChangeHandler);
+        console.log("🔗 SlideChange handler re-attached");
+      }, 50);
+    });
 
-// Update the draggable handle when the slide changes programmatically
-industrySwiper.on("slideChange", () => {
-  moveHandleToSlide(industrySwiper.activeIndex);
-});
+    // Define slide change handler
+    slideChangeHandler = () => {
+      console.log("🔄 Slide changed to:", industrySwiper.activeIndex);
+      moveHandleToSlide(industrySwiper.activeIndex);
+    };
+
+    // Attach slide change event
+    industrySwiper.on("slideChange", slideChangeHandler);
+    console.log("🔗 Initial slideChange handler attached");
+
+    // Arrow navigation
+    const arrowLeft = document.querySelector(".arrow-left");
+    const arrowRight = document.querySelector(".arrow-right");
+
+    if (arrowLeft) {
+      arrowLeft.addEventListener("click", () => {
+        if (industrySwiper.activeIndex > 0) {
+          industrySwiper.slidePrev();
+        }
+      });
+    }
+
+    if (arrowRight) {
+      arrowRight.addEventListener("click", () => {
+        const maxIndex = getMaxSlideIndex();
+        if (industrySwiper.activeIndex < maxIndex) {
+          industrySwiper.slideNext();
+        }
+      });
+    }
+
+    // Handle window resize
+    let resizeTimeout;
+    window.addEventListener("resize", () => {
+      clearTimeout(resizeTimeout);
+      resizeTimeout = setTimeout(() => {
+        moveHandleToSlide(industrySwiper.activeIndex);
+      }, 250);
+    });
+
+    // Initialize handle position
+    moveHandleToSlide(0);
+  }
 
 }
 
