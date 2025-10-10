@@ -637,7 +637,7 @@ function initSwiper() {
     const industrySwiper = new Swiper(".industry-slider", {
       loop: false,
       slidesPerView: 3.8,
-      spaceBetween: 10,
+      spaceBetween: 20,
       resistanceRatio: 0,
       allowTouchMove: false,  // Disable direct slider dragging
       simulateTouch: false,   // Disable mouse drag on slider

@@ -537,6 +537,7 @@ $services = [
         </div>
     </div>
 </section>
+<hr>
 
 <section class="industry">
     <div class="container">
@@ -559,6 +560,8 @@ $services = [
                 <div class="swiper-wrapper">
                     <div class="swiper-slide">
                         <div class="ind-card">
+                            <img src="assets/images/i1.png" class="ind-shade ind-shade-1" alt="">
+                            <img src="assets/images/i2.png" class="ind-shade ind-shade-2" alt="">
                             <div class="icon">
                                 <img src="assets/images/sample.png" class="img-fluid" alt="" />
                             </div>
@@ -570,6 +573,8 @@ $services = [
                     </div>
                     <div class="swiper-slide">
                         <div class="ind-card">
+                            <img src="assets/images/i1.png" class="ind-shade ind-shade-1" alt="">
+                            <img src="assets/images/i2.png" class="ind-shade ind-shade-2" alt="">
                             <div class="icon">
                                 <img src="assets/images/sample.png" class="img-fluid" alt="" />
                             </div>
@@ -581,6 +586,8 @@ $services = [
                     </div>
                     <div class="swiper-slide">
                         <div class="ind-card">
+                            <img src="assets/images/i1.png" class="ind-shade ind-shade-1" alt="">
+                            <img src="assets/images/i2.png" class="ind-shade ind-shade-2" alt="">
                             <div class="icon">
                                 <img src="assets/images/sample.png" class="img-fluid" alt="" />
                             </div>
@@ -592,6 +599,8 @@ $services = [
                     </div>
                     <div class="swiper-slide">
                         <div class="ind-card">
+                            <img src="assets/images/i1.png" class="ind-shade ind-shade-1" alt="">
+                            <img src="assets/images/i2.png" class="ind-shade ind-shade-2" alt="">
                             <div class="icon">
                                 <img src="assets/images/sample.png" class="img-fluid" alt="" />
                             </div>
@@ -603,6 +612,8 @@ $services = [
                     </div>
                     <div class="swiper-slide">
                         <div class="ind-card">
+                            <img src="assets/images/i1.png" class="ind-shade ind-shade-1" alt="">
+                            <img src="assets/images/i2.png" class="ind-shade ind-shade-2" alt="">
                             <div class="icon">
                                 <img src="assets/images/sample.png" class="img-fluid" alt="" />
                             </div>
@@ -614,6 +625,8 @@ $services = [
                     </div>
                     <div class="swiper-slide">
                         <div class="ind-card">
+                            <img src="assets/images/i1.png" class="ind-shade ind-shade-1" alt="">
+                            <img src="assets/images/i2.png" class="ind-shade ind-shade-2" alt="">
                             <div class="icon">
                                 <img src="assets/images/sample.png" class="img-fluid" alt="" />
                             </div>
@@ -625,6 +638,8 @@ $services = [
                     </div>
                     <div class="swiper-slide">
                         <div class="ind-card">
+                            <img src="assets/images/i1.png" class="ind-shade ind-shade-1" alt="">
+                            <img src="assets/images/i2.png" class="ind-shade ind-shade-2" alt="">
                             <div class="icon">
                                 <img src="assets/images/sample.png" class="img-fluid" alt="" />
                             </div>
@@ -636,6 +651,8 @@ $services = [
                     </div>
                     <div class="swiper-slide">
                         <div class="ind-card">
+                            <img src="assets/images/i1.png" class="ind-shade ind-shade-1" alt="">
+                            <img src="assets/images/i2.png" class="ind-shade ind-shade-2" alt="">
                             <div class="icon">
                                 <img src="assets/images/sample.png" class="img-fluid" alt="" />
                             </div>
@@ -645,15 +662,18 @@ $services = [
                             <a href="#" class="btn btn-white">Health care</a>
                         </div>
                     </div>
+                    
 
                 </div>
             </div>
         </div>
 
-        <div class="draggable-control">
-            <i class="fas fa-chevron-left arrow-left"></i>
-            <div class="draggable-handle"></div>
-            <i class="fas fa-chevron-right arrow-right"></i>
+        <div class="draggable-wrap">
+            <div class="draggable-control">
+                <!-- <i class="fas fa-chevron-left arrow-left"></i> -->
+                <div class="draggable-handle">Drag</div>
+                <!-- <i class="fas fa-chevron-right arrow-right"></i> -->
+            </div>
         </div>
     </div>
 
@@ -662,7 +682,7 @@ $services = [
 
 <!-- Swiper with image placeholders -->
 
-
+<hr>
 <!-- Draggable Control -->
 
 <section class="clients-section">
