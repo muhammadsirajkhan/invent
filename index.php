@@ -2,16 +2,88 @@
 
 
 <!-- Main Content Area -->
-<div class="banner" style="background-image: url('http://localhost/invent/assets/images/home/home-banner.png');">
-    <div class="container">
-        <div class="row">
-            <div class="col-lg-6">
-                <div class="banner-inner">
-                    <h1>From concept to code <strong>we build apps</strong> that people love to use</h1>
-                    <p>This is dummy copy. It is not meant to be read. It has been placed here solely to demonstrate the
-                        look and feel
-                        of finished, typeset text.</p>
-                    <a href="#" class="btn btn-primary">Get Started</a>
+<div class="banner-sec" style="background-image: url('http://localhost/invent/assets/images/home/home-banner-2.png');">
+    <div class="banner">
+        <div class="container">
+            <div class="row justify-content-center">
+                <div class="col-lg-9 col-12">
+                    <div class="banner-inner">
+                        <h1>From concept to code <strong>we build apps</strong> that people love to use</h1>
+                        <p>This is dummy copy. It is not meant to be read. It has been placed here solely to demonstrate
+                            the look and feel of finished, typeset text. </p>
+                        <a href="#" class="btn btn-primary">Get Started</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="colab-sec">
+        <div class="container-fluid">
+            <div class="row align-items-stretch">
+                <div class="col-lg-2 col-12">
+                    <div class="colab-content">
+                        <span class="title">We Collaborated with</span>
+                        <span class="number"><strong>1,000+</strong> Company</span>
+                    </div>
+                </div>
+                <div class="col-lg-10 col-12">
+                    <div class="colab-slider-outer">
+                        <div class="swiper colab-slider">
+                            <div class="swiper-wrapper">
+                                <div class="swiper-slide">
+                                    <div class="item">
+                                        <img src="assets/images/home/c1.png" alt="Client 1">
+                                    </div>
+                                </div>
+                                <div class="swiper-slide">
+                                    <div class="item">
+                                        <img src="assets/images/home/c2.png" alt="Client 1">
+                                    </div>
+                                </div>
+                                <div class="swiper-slide">
+                                    <div class="item">
+                                        <img src="assets/images/home/c3.png" alt="Client 1">
+                                    </div>
+                                </div>
+                                <div class="swiper-slide">
+                                    <div class="item">
+                                        <img src="assets/images/home/c4.png" alt="Client 1">
+                                    </div>
+                                </div>
+                                <div class="swiper-slide">
+                                    <div class="item">
+                                        <img src="assets/images/home/c5.png" alt="Client 1">
+                                    </div>
+                                </div>
+                                <div class="swiper-slide">
+                                    <div class="item">
+                                        <img src="assets/images/home/c1.png" alt="Client 1">
+                                    </div>
+                                </div>
+                                <div class="swiper-slide">
+                                    <div class="item">
+                                        <img src="assets/images/home/c2.png" alt="Client 1">
+                                    </div>
+                                </div>
+                                <div class="swiper-slide">
+                                    <div class="item">
+                                        <img src="assets/images/home/c3.png" alt="Client 1">
+                                    </div>
+                                </div>
+                                <div class="swiper-slide">
+                                    <div class="item">
+                                        <img src="assets/images/home/c4.png" alt="Client 1">
+                                    </div>
+                                </div>
+                                <div class="swiper-slide">
+                                    <div class="item">
+                                        <img src="assets/images/home/c5.png" alt="Client 1">
+                                    </div>
+                                </div>
+
+                            </div>
+                        </div>
+                    </div>
                 </div>
             </div>
         </div>
@@ -559,7 +631,7 @@ $services = [
             <div class="swiper-container industry-slider">
                 <div class="swiper-wrapper">
                     <div class="swiper-slide">
-                        <div class="ind-card">
+                        <div class="ind-card edge edge-base">
                             <img src="assets/images/i1.png" class="ind-shade ind-shade-1" alt="">
                             <img src="assets/images/i2.png" class="ind-shade ind-shade-2" alt="">
                             <div class="icon">
@@ -572,7 +644,7 @@ $services = [
                         </div>
                     </div>
                     <div class="swiper-slide">
-                        <div class="ind-card">
+                        <div class="ind-card edge edge-base">
                             <img src="assets/images/i1.png" class="ind-shade ind-shade-1" alt="">
                             <img src="assets/images/i2.png" class="ind-shade ind-shade-2" alt="">
                             <div class="icon">
@@ -585,7 +657,7 @@ $services = [
                         </div>
                     </div>
                     <div class="swiper-slide">
-                        <div class="ind-card">
+                        <div class="ind-card edge edge-base">
                             <img src="assets/images/i1.png" class="ind-shade ind-shade-1" alt="">
                             <img src="assets/images/i2.png" class="ind-shade ind-shade-2" alt="">
                             <div class="icon">
@@ -598,7 +670,7 @@ $services = [
                         </div>
                     </div>
                     <div class="swiper-slide">
-                        <div class="ind-card">
+                        <div class="ind-card edge edge-base">
                             <img src="assets/images/i1.png" class="ind-shade ind-shade-1" alt="">
                             <img src="assets/images/i2.png" class="ind-shade ind-shade-2" alt="">
                             <div class="icon">
@@ -611,7 +683,7 @@ $services = [
                         </div>
                     </div>
                     <div class="swiper-slide">
-                        <div class="ind-card">
+                        <div class="ind-card edge edge-base">
                             <img src="assets/images/i1.png" class="ind-shade ind-shade-1" alt="">
                             <img src="assets/images/i2.png" class="ind-shade ind-shade-2" alt="">
                             <div class="icon">
@@ -624,7 +696,7 @@ $services = [
                         </div>
                     </div>
                     <div class="swiper-slide">
-                        <div class="ind-card">
+                        <div class="ind-card edge edge-base">
                             <img src="assets/images/i1.png" class="ind-shade ind-shade-1" alt="">
                             <img src="assets/images/i2.png" class="ind-shade ind-shade-2" alt="">
                             <div class="icon">
@@ -637,7 +709,7 @@ $services = [
                         </div>
                     </div>
                     <div class="swiper-slide">
-                        <div class="ind-card">
+                        <div class="ind-card edge edge-base">
                             <img src="assets/images/i1.png" class="ind-shade ind-shade-1" alt="">
                             <img src="assets/images/i2.png" class="ind-shade ind-shade-2" alt="">
                             <div class="icon">
@@ -650,7 +722,7 @@ $services = [
                         </div>
                     </div>
                     <div class="swiper-slide">
-                        <div class="ind-card">
+                        <div class="ind-card edge edge-base">
                             <img src="assets/images/i1.png" class="ind-shade ind-shade-1" alt="">
                             <img src="assets/images/i2.png" class="ind-shade ind-shade-2" alt="">
                             <div class="icon">
@@ -662,7 +734,7 @@ $services = [
                             <a href="#" class="btn btn-white">Health care</a>
                         </div>
                     </div>
-                    
+
 
                 </div>
             </div>
@@ -681,6 +753,95 @@ $services = [
 </section>
 
 <!-- Swiper with image placeholders -->
+<hr>
+
+<section class="process">
+    <img src="assets/images/shade-process-1.png" class="shade-process shade-process-1" alt="">
+    <img src="assets/images/shade-process-2.png" class="shade-process shade-process-2" alt="">
+    <div class="container">
+        <div class="row align-items-center">
+            <div class="col-lg-6 col-12">
+                <div class="process-outer">
+                    <div class="swiper process-slider">
+                        <div class="swiper-wrapper">
+                            <div class="swiper-slide">
+                                <div class="process-card">
+                                    <div class="icon">
+                                        <img src="assets/images/p-icon-1.png" alt="">
+                                    </div>
+                                    <h3>Ideate</h3>
+                                    <p>This is dummy copy. It is not meant to be read. It has been placed here solely to
+                                        demonstrate the look and feel of finished, typeset text.</p>
+                                </div>
+                            </div>
+                            <div class="swiper-slide">
+                                <div class="process-card">
+                                    <div class="icon">
+                                        <img src="assets/images/p-icon-1.png" alt="">
+                                    </div>
+                                    <h3>Ideate</h3>
+                                    <p>This is dummy copy. It is not meant to be read. It has been placed here solely to
+                                        demonstrate the look and feel of finished, typeset text.</p>
+                                </div>
+                            </div>
+                            <div class="swiper-slide">
+                                <div class="process-card">
+                                    <div class="icon">
+                                        <img src="assets/images/p-icon-1.png" alt="">
+                                    </div>
+                                    <h3>Ideate</h3>
+                                    <p>This is dummy copy. It is not meant to be read. It has been placed here solely to
+                                        demonstrate the look and feel of finished, typeset text.</p>
+                                </div>
+                            </div>
+                            <div class="swiper-slide">
+                                <div class="process-card">
+                                    <div class="icon">
+                                        <img src="assets/images/p-icon-1.png" alt="">
+                                    </div>
+                                    <h3>Ideate</h3>
+                                    <p>This is dummy copy. It is not meant to be read. It has been placed here solely to
+                                        demonstrate the look and feel of finished, typeset text.</p>
+                                </div>
+                            </div>
+                            <div class="swiper-slide">
+                                <div class="process-card">
+                                    <div class="icon">
+                                        <img src="assets/images/p-icon-1.png" alt="">
+                                    </div>
+                                    <h3>Ideate</h3>
+                                    <p>This is dummy copy. It is not meant to be read. It has been placed here solely to
+                                        demonstrate the look and feel of finished, typeset text.</p>
+                                </div>
+                            </div>
+                            <div class="swiper-slide">
+                                <div class="process-card">
+                                    <div class="icon">
+                                        <img src="assets/images/p-icon-1.png" alt="">
+                                    </div>
+                                    <h3>Ideate</h3>
+                                    <p>This is dummy copy. It is not meant to be read. It has been placed here solely to
+                                        demonstrate the look and feel of finished, typeset text.</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="swiper-pagination process-pagination d-none"></div>
+                </div>
+
+            </div>
+            <div class="col-lg-6 col-12">
+                <div class="title-wrap text-white">
+                    <h2>A <strong>Process</strong> That <br>Delivers</h2>
+                    <p>This is dummy copy. It is not meant to be read. It has been placed here solely to demonstrate the
+                        look and feel of finished, typeset text. Only for show. He who searches for meaning here will be
+                        sorely disappointed. This is dummy copy. It is not meant to be read. </p>
+                    <a href="#" class="btn btn-primary">Get Started</a>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
 
 <hr>
 <!-- Draggable Control -->

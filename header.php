@@ -13,6 +13,8 @@
         :root {
             --edge: url('http://localhost/invent/assets/images/edge.png');
             --edge-grey: url('http://localhost/invent/assets/images/edge-grey.png');
+            --side-black: url('http://localhost/invent/assets/images/c-l.png');
+            --side-white: url('http://localhost/invent/assets/images/c-r.png');
         }
     </style>
     <link rel="stylesheet" href="assets/fonts/stylesheet.css">
