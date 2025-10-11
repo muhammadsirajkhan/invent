@@ -21,7 +21,7 @@
 
 # Configuration
 wp-config.php
-
+*.mp4
 # Example themes
 /wp-content/themes/twenty*/
 
