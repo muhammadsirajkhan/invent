@@ -1,5 +1,5 @@
 <!-- Contact Section -->
-<section class="contact-section">
+<section class="contact-section <?php if($footer_grey){echo 'bg-grey';} ?>">
     <div class="container">
         <div class="contact-section-inner">
             <!-- Left Side - Content -->

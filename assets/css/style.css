@@ -246,7 +246,9 @@ HOME BANNER
     color: var(--primary-color);
 }
 
-.banner-inner {text-align: center;}
+.banner-inner {
+    text-align: center;
+}
 
 .banner img {
     width: 100%;
@@ -436,7 +438,7 @@ section.contact-section::before {
     left: 0;
     bottom: 0;
     background-color: #000;
-    z-index: -1;
+    z-index: 0;
 }
 
 .contact-section-inner {
@@ -449,6 +451,8 @@ section.contact-section::before {
     display: flex;
     align-items: center;
     gap: var(--spacing-60);
+    position: relative;
+    z-index: 1;
 }
 
 .contact-left {
@@ -533,7 +537,24 @@ section.contact-section::before {
     font-size: 16px;
     border: 2px solid var(--primary-color);
 }
+.grey-bg {}
 
+.contact-section.bg-grey {
+    background-color: #F5F5F5;
+}
+
+.contact-section.bg-grey .contact-section-inner {
+    background-color: #fff;
+}
+
+.contact-section.bg-grey .contact-form-wrapper {
+    background-color: #F5F5F5;
+    box-shadow: unset;
+}
+
+.contact-section.bg-grey .contact-form .form-control {
+    background-color: #fff;
+}
 /* ============================================
    CONTACT FORM 7 - CONTACT SECTION SPECIFIC
    ============================================ */
@@ -938,7 +959,9 @@ input#cf7-print-btn {
     color: #000;
 }
 
-.vission .container-fluid, .industry .container-fluid, .colab-sec .container-fluid {
+.vission .container-fluid,
+.industry .container-fluid,
+.colab-sec .container-fluid {
     max-width: calc(50vw + (1163px / 2));
     margin-right: 0;
 }
@@ -1976,7 +1999,8 @@ section.process {
     margin: 0;
     overflow: hidden;
     display: -webkit-box;
-    -webkit-line-clamp: 3; /* Number of lines to display */
+    -webkit-line-clamp: 3;
+    /* Number of lines to display */
     -webkit-box-orient: vertical;
     text-overflow: ellipsis;
     height: 72px;
@@ -2039,9 +2063,11 @@ section.process .container {
 .colab-content span.number {
     font-size: var(--font-size-2xl);
 }
+
 .colab-content span.number strong {
     color: var(--primary-color);
 }
+
 .colab-slider-outer {
     background-size: auto 100%;
     background-position: left top;
@@ -2052,7 +2078,8 @@ section.process .container {
     padding-left: 50px;
 }
 
-.colab-content::before, .colab-slider-outer::before {
+.colab-content::before,
+.colab-slider-outer::before {
     content: '';
     position: absolute;
     width: 100%;
@@ -2070,7 +2097,8 @@ section.process .container {
     z-index: 1;
 }
 
-.colab-content::after, .colab-slider-outer::after {
+.colab-content::after,
+.colab-slider-outer::after {
     content: '';
     position: absolute;
     width: 100vw;
@@ -2111,4 +2139,113 @@ section.process .container {
     max-width: 160px;
     object-fit: contain;
     object-position: center;
+}
+
+.contact-box {
+    aspect-ratio: 370/145;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    background: #F5F5F5;
+    border-radius: 20px;
+    gap: 5px;
+}
+
+.contact-box .title {
+    font-size: var(--font-size-lg);
+    text-transform: uppercase;
+    letter-spacing: 2px;
+}
+
+.contact-box .link {
+    font-size: var(--font-size-sm);
+    color: var(--primary-color);
+    font-weight: 400;
+}
+
+.contact-main-left {}
+
+.contact-main-left .title {
+    background-color: #F5F5F5;
+    padding: 45px 30px 230px;
+    text-align: center;
+    border-radius: 20px;
+    max-width: 458px;
+}
+
+.contact-main-left .title h2 {
+    font-size: var(--font-size-5xl);
+    font-weight: 400;
+}
+
+.contact-main-left .image img {
+    max-width: 100%;
+    height: auto;
+    margin-top: -240px;
+    width: auto;
+}
+.contact-main-left .title h2 strong {
+    color: var(--primary-color);
+    font-weight: 400;
+}
+.contact-main .form-group {
+    margin-bottom: var(--spacing-36);
+}
+.contact-main textarea.form-control {
+    height: 254px;
+}
+
+.contact-main .form-control {
+    height: 70px;
+}
+
+.contact-main .form-group label {
+    margin-bottom: 10px;
+}
+.find-card img {
+    aspect-ratio: 336/204;
+    object-fit: cover;
+    object-position: center;
+    border-radius: 16px;
+}
+
+
+.find-card {
+    background-color: #fff;
+    padding: 20px;
+    border-radius: 20px;
+}
+.find-card h3 {
+    font-size: var(--font-size-2xl);
+    margin-bottom: 30px;
+}
+
+.find-card .icon {
+    margin-bottom: 30px;
+}
+
+.find-card .info>* {
+    font-size: var(--font-size-sm);
+    margin: 0;
+}
+
+.find-card .info span {
+    display: block;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    color: var(--primary-color);
+}
+
+.find-card .info {
+    margin-bottom: 15px;
+}
+
+.find-card>*:last-child {
+    margin-bottom: 10px;
+}
+
+section.find-sec {
+    background-color: #F5F5F5;
+    padding: var(--spacing-5xl) 0;
 }
