@@ -215,6 +215,8 @@ HOME BANNER
     flex-direction: column;
     justify-content: space-between;
     padding-top: 23vw;
+    position: relative;
+    overflow: hidden;
 }
 
 .banner .container,
@@ -2119,6 +2121,8 @@ section.process .container {
 
 .colab-sec {
     overflow: hidden;
+    position: relative;
+    z-index: 1;
 }
 
 .colab-slider-outer::before {
@@ -2390,3 +2394,25 @@ linear infinite;
 .header .logo .logo-content {
     margin-left: 5px;
 }
+
+
+.banner-sec .video {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    top: 0;
+    left: 0;
+}
+
+.banner-sec .video video {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.banner-sec .banner {
+    position: relative;
+    z-index: 1;
+}
+
+.banner-sec .video::after {content: '';position: absolute;width: 100%;height: 100%;background-color: #000000bd;left: 0;top: 0;}

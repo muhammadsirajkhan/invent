@@ -3,6 +3,11 @@
 
 <!-- Main Content Area -->
 <div class="banner-sec" style="background-image: url('http://localhost/invent/assets/images/home/home-banner-2.png');">
+    <div class="video">
+        <video autoplay muted loop id="myVideo">
+            <source src="assets/images/sample-video.mp4" type="video/mp4">
+        </video>
+    </div>
     <div class="banner">
         <div class="container">
             <div class="row justify-content-center">
