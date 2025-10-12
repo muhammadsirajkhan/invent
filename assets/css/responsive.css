@@ -122,36 +122,123 @@
    LEGACY BREAKPOINTS (Existing Styles)
    ============================================ */
 
-@media only screen and (min-width: 100px) and (max-width: 1799px) {}
+@media only screen and (min-width: 100px) and (max-width: 1799px) {
+    .ind-card p {
+        top: 80px;
+    }
+}
 
-@media only screen and (min-width: 100px) and (max-width: 1599px) {}
+@media only screen and (min-width: 100px) and (max-width: 1599px) {
+    .ind-card p {
+        top: 60px;
+    }
+}
 
 @media only screen and (min-width: 100px) and (max-width: 1499px) {}
 
-@media only screen and (min-width: 100px) and (max-width: 1299px) {}
+@media only screen and (min-width: 100px) and (max-width: 1366px) {}
+
+@media only screen and (min-width: 100px) and (max-width: 1299px) {
+    .awards-btn-wrap>* {
+        position: unset;
+        transform: unset;
+    }
+
+    .awards-btn-wrap {
+        display: flex;
+        gap: 15px;
+        flex-direction: row-reverse;
+        justify-content: flex-end;
+        padding-top: var(--spacing-3xl);
+        transform: unset;
+    }
+
+    .colab-content {
+        text-align: center;
+    }
+}
 
 @media only screen and (min-width: 100px) and (max-width: 1199px) {
     .footer-contact-item {
         padding-left: 0;
     }
 
+    .design-tab .nav-link {
+        height: 100%;
+        /* margin: 0 14px; */
+    }
+
+    .header .navbar {
+        border-top: unset;
+    }
+
     .footer-contact-item::before {
         display: none;
+    }
+
+    .banner-sec {
+        aspect-ratio: 1453/1076;
+        padding-top: 15vw;
+    }
+
+    .colab-content::before {
+        right: -25px;
+    }
+
+    .colab-content::after {
+        right: 80px;
+    }
+
+    .colab-slider-outer::after {
+        left: -20px;
+        width: 133%;
+    }
+
+    .ideas-section-inner {
+        aspect-ratio: unset;
+        background-position: left;
+        border-radius: 20px;
     }
 }
 
 @media only screen and (min-width: 100px) and (max-width: 1099px) {
-    .banner {
-        aspect-ratio: 1440 / 953;
-        background-size: cover;
-        background-position: left;
-        background-repeat: no-repeat;
+    .banner-sec {
+        aspect-ratio: 1453 / 1196;
+    }
+
+    .draggable-control {
+        width: 100%;
+    }
+
+    .process-slider {
+        height: auto;
+    }
+
+    section.process .title-wrap {
+        margin: 0;
+    }
+
+    .design-left {
+        /* margin-bottom: 30px; */
+        height: auto;
+    }
+
+    .process .shade-process {
+        display: none;
     }
 }
 
 @media only screen and (min-width: 100px) and (max-width: 991px) {
-    .banner {
-        aspect-ratio: 1440 / 1040;
+    .process-outer {
+        margin-bottom: 30px;
+    }
+
+    .toc-wrapper {
+        display: none;
+    }
+
+    .ceo .icon {
+        margin: 50px auto 0;
     }
 
     .contact-section {
@@ -224,11 +311,8 @@
 }
 
 @media only screen and (min-width: 100px) and (max-width: 767px) {
-    .banner {
-        aspect-ratio: unset;
-        background-color: #f5f5f5;
-        background-image: unset !important;
-        padding: 60px 0 30px;
+    .inner-banner ul {
+        flex-wrap: wrap;
     }
 
     .banner-inner {
@@ -238,6 +322,11 @@
     .contact-section {
         padding: var(--spacing-48) 0;
     }
+
+    .author-card {
+        flex-direction: column;
+    }
+
 
     .contact-icon {
         width: 80px;
@@ -312,11 +401,103 @@
 }
 
 @media only screen and (min-width: 100px) and (max-width: 575px) {
-    .banner {
+    .banner-sec {
         aspect-ratio: unset;
-        background-color: #f5f5f5;
-        background-image: unset !important;
-        padding: 60px 0 30px;
+        padding-top: 30vw;
+        gap: 50px;
+
+    }
+
+    .cta {
+        padding: 15px 30px;
+    }
+
+    .blog-tabs {
+        justify-content: center;
+    }
+
+    .article-card::before,
+    .article-card .image {
+        opacity: 1;
+    }
+
+    .article-card .content h3,
+    .article-card .details .date {
+        color: #fff;
+    }
+
+    .article-card .details .read-more svg path {
+        stroke: #fff;
+    }
+
+    .contact-section-inner {
+        padding: 15px;
+    }
+
+    .ceo {
+        padding: 30px 15px;
+    }
+
+    .footer-contact-item {
+        gap: 5px;
+    }
+
+    .clients-card {
+        flex-direction: column;
+    }
+
+    .clients-card .icon {
+        flex: 1 1 100%;
+        width: 100%;
+    }
+
+    .clients-card .icon img {
+        width: 100%;
+    }
+
+    .draggable-wrap {
+        display: none;
+    }
+
+    .ind-card p {
+        opacity: 1;
+    }
+
+    .ind-card .icon::before {
+        opacity: 1;
+    }
+
+    .ind-card .ind-shade {
+        opacity: 1;
+    }
+
+    .ind-card {
+        aspect-ratio: 325/420;
+    }
+
+    .success-card-wrap {
+        flex-direction: column;
+    }
+
+    .design-tab {
+        flex-direction: column;
+    }
+
+    .design-tab .nav-item:has(.active) {
+        background: transparent;
+    }
+
+    .design-tab .nav-item {
+        padding: 0;
+    }
+
+    .design-tab {
+        gap: 15px;
+        margin-bottom: 15px;
+    }
+
+    .design-content {
+        border-radius: 20px;
     }
 
     .contact-right {
@@ -325,6 +506,11 @@
 
     .contact-title {
         font-size: var(--font-size-32);
+    }
+
+    .colab-slider-outer {
+        padding-left: 0;
+        padding-top: 30px;
     }
 
     .contact-form-wrapper {
@@ -336,7 +522,7 @@
     }
 
     .header .logo {
-        height: 30px;
+        height: auto;
     }
 
     .wrapper {

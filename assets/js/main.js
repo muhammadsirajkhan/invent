@@ -546,10 +546,7 @@ function initSwiper() {
       768: {
         slidesPerView: 2,
       },
-      1024: {
-        slidesPerView: 3,
-      },
-      1920: {
+      1280: {
         slidesPerView: 2.3,
       },
     },
@@ -570,8 +567,8 @@ function initSwiper() {
       768: {
         slidesPerView: 1,
       },
-      1024: {
-        slidesPerView: 1,
+      1280: {
+        slidesPerView: 2,
       },
       1920: {
         slidesPerView: 2,
@@ -597,7 +594,7 @@ function initSwiper() {
       1024: {
         slidesPerView: 3,
       },
-      1920: {
+      1280: {
         slidesPerView: 5,
       },
     },
@@ -627,13 +624,13 @@ function initSwiper() {
     },
   });
   const colabSlider = new Swiper(".colab-slider", {
-    slidesPerView: 1,
+    slidesPerView: 2,
     spaceBetween: 30,
     loop: false,
-    // autoplay: {
-    //   delay: 5000,
-    //   disableOnInteraction: false,
-    // },
+    autoplay: {
+      delay: 2500,
+      disableOnInteraction: false,
+    },
     navigation: {
       nextEl: ".blog-button-next",
       prevEl: ".blog-button-prev",
@@ -643,23 +640,41 @@ function initSwiper() {
         slidesPerView: 2,
       },
       1024: {
-        slidesPerView: 3,
+        slidesPerView: 4,
       },
-      1920: {
+      1280: {
+        slidesPerView: 3.5,
+      },
+      1366: {
+        slidesPerView: 4.5,
+      },
+      1600: {
         slidesPerView: 5.5,
       },
     },
   });
 
   var processSlider = new Swiper(".process-slider", {
-    direction: "vertical",
-    slidesPerView: 2.2,
+    direction: "horizontal",
+    slidesPerView: 1,
     spaceBetween: 30,
     loop: false,
     mousewheel: true,
     pagination: {
       el: ".process-pagination",
       clickable: true,
+    },
+    breakpoints: {
+      768: {
+        slidesPerView: 2,
+      },
+      992: {
+        slidesPerView: 1,
+      },
+      1200: {
+        slidesPerView: 2.2,
+        direction: "vertical",
+      },
     },
   });
 
@@ -671,12 +686,49 @@ function initSwiper() {
   if (handle && draggableControl) {
     const industrySwiper = new Swiper(".industry-slider", {
       loop: false,
-      slidesPerView: 3.8,
+      slidesPerView: 1.2,
       spaceBetween: 20,
       resistanceRatio: 0,
-      allowTouchMove: false, // Disable direct slider dragging
-      simulateTouch: false, // Disable mouse drag on slider
-      touchRatio: 0, // Disable touch sensitivity on slider
+      allowTouchMove: true, // Disable direct slider dragging
+      simulateTouch: true, // Disable mouse drag on slider
+      touchRatio: 1, // Disable touch sensitivity on slider
+      breakpoints: {
+        768: {
+          slidesPerView: 2,
+          resistanceRatio: 0,
+          allowTouchMove: false, // Disable direct slider dragging
+          simulateTouch: false, // Disable mouse drag on slider
+          touchRatio: 0,
+        },
+        1024: {
+          slidesPerView: 3,
+          resistanceRatio: 0,
+          allowTouchMove: false, // Disable direct slider dragging
+          simulateTouch: false, // Disable mouse drag on slider
+          touchRatio: 0,
+        },
+        1280: {
+          slidesPerView: 3,
+          resistanceRatio: 0,
+          allowTouchMove: false, // Disable direct slider dragging
+          simulateTouch: false, // Disable mouse drag on slider
+          touchRatio: 0,
+        },
+        1366: {
+          slidesPerView: 3.5,
+          resistanceRatio: 0,
+          allowTouchMove: false, // Disable direct slider dragging
+          simulateTouch: false, // Disable mouse drag on slider
+          touchRatio: 0,
+        },
+        1600: {
+          slidesPerView: 3.8,
+          resistanceRatio: 0,
+          allowTouchMove: false, // Disable direct slider dragging
+          simulateTouch: false, // Disable mouse drag on slider
+          touchRatio: 0,
+        },
+      },
     });
 
     console.log("🎯 Industry Swiper initialized:", {
