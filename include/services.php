@@ -51,7 +51,7 @@ $services = [
         <div class="service-outer">
             <div class="row gy-4">
                 <?php foreach ($services as $service): ?>
-                    <div class="col-lg-4 col-12">
+                    <div class="col-xl-4 col-lg-6 col-12">
                         <div class="service-card edge edge-base edge-primary">
                             <div class="title">
                                 <div class="icon">
