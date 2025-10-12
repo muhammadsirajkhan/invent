@@ -408,6 +408,15 @@
 
     }
 
+    .contact-form button.wpcf7-submit {
+        max-width: fit-content;
+        padding: 20px 40px;
+    }
+
+    .ideas-section-inner {
+        padding: 35px 45px;
+    }
+
     .cta {
         padding: 15px 30px;
     }

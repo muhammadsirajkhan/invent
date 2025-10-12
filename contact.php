@@ -8,7 +8,7 @@ $footer_grey = true;
 <hr>
 <section class="contact-details">
     <div class="container">
-        <div class="row">
+        <div class="row gy-4">
             <div class="col-lg-4 col-12">
                 <div class="contact-box edge edge-base edge-primary">
                     <span class="title">You Can EMail here</span>
@@ -33,7 +33,7 @@ $footer_grey = true;
 <hr>
 <section class="contact-main">
     <div class="container">
-        <div class="row">
+        <div class="row gy-5">
             <div class="col-lg-4 col-12">
                 <div class="contact-main-left">
                     <div class="title">
@@ -107,7 +107,7 @@ $footer_grey = true;
             </div>
         </div>
         <div class="find-outer">
-            <div class="row">
+            <div class="row gy-4">
                 <div class="col-lg-4 col-12">
                     <div class="find-card">
                         <div class="icon edge edge-base"><img src="assets/images/sample.png" alt=""></div>
