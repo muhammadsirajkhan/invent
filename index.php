@@ -25,13 +25,13 @@
     <div class="colab-sec">
         <div class="container-fluid">
             <div class="row align-items-stretch">
-                <div class="col-lg-2 col-12">
+                <div class="col-xl-3 col-12">
                     <div class="colab-content">
                         <span class="title">We Collaborated with</span>
                         <span class="number"><strong>1,000+</strong> Company</span>
                     </div>
                 </div>
-                <div class="col-lg-10 col-12">
+                <div class="col-xl-9 col-12">
                     <div class="colab-slider-outer">
                         <div class="swiper colab-slider">
                             <div class="swiper-wrapper">
