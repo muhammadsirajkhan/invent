@@ -1,8 +1,8 @@
 <section class="success-section">
-    <div class="container"><span class="border-top"></span></div>
+    <div class="container">
     <div class="container">
         <div class="title-wrap">
-            <div class="row">
+            <div class="row gy-4">
                 <div class="col-lg-6 col-12">
                     <h2>The Numbers That Define Our <strong>Success</strong></h2>
                     <p>This is dummy copy. It is not meant to be read. It has been placed here solely to demonstrate the
