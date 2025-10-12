@@ -408,6 +408,10 @@
 
     }
 
+    .title-wrap {
+        margin-bottom: var(--spacing-3xl);
+    }
+
     .contact-form button.wpcf7-submit {
         max-width: fit-content;
         padding: 20px 40px;

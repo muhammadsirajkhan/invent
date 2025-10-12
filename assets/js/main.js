@@ -665,6 +665,9 @@ function initSwiper() {
       clickable: true,
     },
     breakpoints: {
+      375: {
+        slidesPerView: 1.2,
+      },
       768: {
         slidesPerView: 2,
       },
@@ -686,13 +689,16 @@ function initSwiper() {
   if (handle && draggableControl) {
     const industrySwiper = new Swiper(".industry-slider", {
       loop: false,
-      slidesPerView: 1.2,
+      slidesPerView: 1,
       spaceBetween: 20,
       resistanceRatio: 0,
       allowTouchMove: true, // Disable direct slider dragging
       simulateTouch: true, // Disable mouse drag on slider
       touchRatio: 1, // Disable touch sensitivity on slider
       breakpoints: {
+        375: {
+          slidesPerView: 1.2,
+        },
         768: {
           slidesPerView: 2,
           resistanceRatio: 0,
