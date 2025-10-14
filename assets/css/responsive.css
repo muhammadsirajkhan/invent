@@ -126,17 +126,56 @@
     .ind-card p {
         top: 80px;
     }
+
+    .zigzag.separate::before {
+        right: 44.2%;
+    }
 }
+
+
+
+@media only screen and (min-width: 100px) and (max-width: 1600px) {}
 
 @media only screen and (min-width: 100px) and (max-width: 1599px) {
     .ind-card p {
         top: 60px;
     }
+
+    .zigzag.separate::before {
+        right: 43%;
+    }
 }
 
-@media only screen and (min-width: 100px) and (max-width: 1499px) {}
+@media only screen and (min-width: 100px) and (max-width: 1499px) {
+    .zigzag.separate .container {
+        max-width: calc(50vw + (1163px / 2));
+        margin-right: 0;
+        /* max-width: 100%; */
+        left: auto;
+        right: 0;
 
-@media only screen and (min-width: 100px) and (max-width: 1366px) {}
+    }
+
+    .zigzag.separate .left {
+        width: calc(1170px * 0.5833333333);
+    }
+
+    .zigzag.separate .icon {
+        border-top-right-radius: 0px;
+        border-bottom-right-radius: 0px;
+    }
+
+    .zigzag.separate .right {
+        width: calc((1170px * 0.4166666667) - 1.5rem);
+        flex: 1 1 auto;
+    }
+}
+
+@media only screen and (min-width: 100px) and (max-width: 1366px) {
+    .zigzag.separate::before {
+        right: 42.7%;
+    }
+}
 
 @media only screen and (min-width: 100px) and (max-width: 1299px) {
     .awards-btn-wrap>* {
@@ -155,6 +194,10 @@
 
     .colab-content {
         text-align: center;
+    }
+
+    .zigzag.separate::before {
+        right: 42%;
     }
 }
 
