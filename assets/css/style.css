@@ -3053,3 +3053,47 @@ img.icon-core {
 .prefer .vision-btn-wrap>*:hover{
     background-color: #000;
 }
+
+section.expert {
+    background-color: #F5F5F5;
+    padding-top: var(--spacing-5xl);
+    padding-bottom: var(--spacing-5xl);
+}
+
+.expert-flex {
+    gap: 70px;
+    align-items: stretch;
+    overflow: hidden;
+}
+
+
+.expert-nav {
+    flex: 0 0 300px;
+    gap: 15px;
+}
+
+.expert-nav .nav-link {
+    font-size: var(--font-size-lg);
+    line-height: var(--line-height-tight);
+    padding: 45px 15px;
+    border-radius: 20px;
+    color: #757575;
+}
+
+.expert-nav .nav-link.active {background-color: #fff;color: #000;font-weight: bold;}
+
+.expert-wrap .row, .expert-content .tab-pane {
+    height: 100%;
+}
+
+.expert-wrap {
+    background-color: #fff;
+    border-radius: 20px;
+    height: 100%;
+}
+
+
+.expert-wrap .content {padding-left: 65px;}
+.expert-wrap .icon {
+    text-align: center;
+}
