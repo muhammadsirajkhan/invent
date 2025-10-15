@@ -1,5 +1,5 @@
 <section class="prefer">
-    <div class="container-fluid">
+    <div class="container">
         <div class="title-wrap">
             <div class="row">
                 <div class="col-lg-8 col-12">
@@ -12,6 +12,8 @@
                 </div>
             </div>
         </div>
+    </div>
+    <div class="container-fluid">
         <div class="prefer-outer">
             <div class="swiper prefer-slider">
                 <div class="swiper-wrapper">
