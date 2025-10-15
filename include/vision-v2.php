@@ -16,8 +16,8 @@
             <div class="row gy-4">
                 <div class="col-lg-6 col-12">
                     <div class="vision2-card">
-                        <div class="icon edge edge-grey edge-base">
-                            <img src="assets/images/home/vission.png" alt="Musically">
+                        <div class="icon">
+                            <img src="assets/images/sample.png" alt="Musically">
                         </div>
                         <div class="title">
                             <h3>Musically</h3>
@@ -33,8 +33,8 @@
                 </div>
                 <div class="col-lg-6 col-12">
                     <div class="vision2-card">
-                        <div class="icon edge edge-grey edge-base">
-                            <img src="assets/images/home/vission.png" alt="Musically">
+                        <div class="icon">
+                            <img src="assets/images/sample.png" alt="Musically">
                         </div>
                         <div class="title">
                             <h3>Musically</h3>
@@ -50,8 +50,8 @@
                 </div>
                 <div class="col-lg-6 col-12">
                     <div class="vision2-card">
-                        <div class="icon edge edge-grey edge-base">
-                            <img src="assets/images/home/vission.png" alt="Musically">
+                        <div class="icon">
+                            <img src="assets/images/sample.png" alt="Musically">
                         </div>
                         <div class="title">
                             <h3>Musically</h3>
@@ -67,8 +67,8 @@
                 </div>
                 <div class="col-lg-6 col-12">
                     <div class="vision2-card">
-                        <div class="icon edge edge-grey edge-base">
-                            <img src="assets/images/home/vission.png" alt="Musically">
+                        <div class="icon">
+                            <img src="assets/images/sample.png" alt="Musically">
                         </div>
                         <div class="title">
                             <h3>Musically</h3>

@@ -2553,6 +2553,7 @@ img.ceo-bg {
     font-size: var(--font-size-2xl);
     font-weight: bold;
     box-shadow: unset;
+    color: #000;
 }
 
 .about-faq .accordion-item {
@@ -2573,7 +2574,7 @@ img.ceo-bg {
 
 .about-faq .accordion-body {
     font-size: var(--font-size-base);
-    padding: 20px 30px;
+    padding: 50px 30px 0;
 }
 
 .best .content h2 {
@@ -2923,17 +2924,89 @@ img.icon-core {
 }
 
 .service-best .about-faq .accordion-item {
-    padding: 30px;
+    padding: 28px 30px;
 }
 
 .service-best .about-faq .accordion-header {
-    border-bottom: 1px solid #E0E0E0 !important;
+    /* border-bottom: 1px solid #E0E0E0 !important; */
     position: relative;
 }
 
 .service-best .about-faq .accordion-header::before {
     content: '';
     position: absolute;
-    width: 100%;
+    width: calc(100% - 60px);
     height: 1px;
+    background-color: #E0E0E0;
+    z-index: 1;
+    bottom: -28px;
+    left: 50%;
+    transform: translateX(-50%);
+    transition: var(--transition-normal);
+}
+
+.service-best .about-faq .accordion-button {
+    padding-top: 0;
+    padding-bottom: 0;
+}
+
+.service-best .about-faq .accordion-header:has(.collapsed)::before {
+    background-color: transparent;
+}
+
+
+.vision2-card .icon {
+    border-radius: 20px;
+    overflow: hidden;
+    margin-bottom: 30px;
+}
+
+.vision2-card .icon img {
+    aspect-ratio: 550/500;
+    object-fit: cover;
+}
+
+.vision2-card .title {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-bottom: 30px;
+}
+
+.vision2-card .title h3 {
+    margin: 0;
+    font-size: var(--font-size-4xl);
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    width: 290px;
+    line-height: var(--line-height-tight);
+}
+
+.vision2-card .title .tags span {
+    font-size: var(--font-size-xs);
+    padding: 15px 20px;
+    background-color: var(--primary-color);
+    border-radius: 50px;
+    color: #fff;
+    font-weight: 400;
+    letter-spacing: 1px;
+    text-align: center;
+}
+
+.vision2-card .title .tags {
+    display: flex;
+    align-items: center;
+    gap: 15px;
+}
+.vision-outer .row>*:nth-child(even) {
+    transform: translateY(-50px);
+}
+
+.vision2-card p {
+    margin: 0;
+    overflow: hidden;
+    display: -webkit-box;
+    -webkit-box-orient: vertical;
+    -webkit-line-clamp: 3;
 }

@@ -1,4 +1,6 @@
-<?php include 'header.php'; ?>
+<?php include 'header.php'; 
+$footer_grey = true;
+?>
 
 <?php include 'inner-banner-services.php'; ?>
 
@@ -129,6 +131,14 @@
 
 <?php include 'include/vision-v2.php'; ?>
 
-<hr>
 
+
+
+<?php include 'include/process.php'; ?>
+<hr>
+<?php include 'include/industry.php'; ?>
+<hr>
+<?php include 'include/modal.php'; ?>
+
+<?php include 'include/success.php'; ?>
 <?php include 'footer.php'; ?>
