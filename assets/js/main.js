@@ -551,6 +551,36 @@ function initSwiper() {
       },
     },
   });
+  const preferSlider = new Swiper(".prefer-slider", {
+    slidesPerView: 1,
+    spaceBetween: 30,
+    loop: false,
+    // autoplay: {
+    //   delay: 5000,
+    //   disableOnInteraction: false,
+    // },
+    navigation: {
+      nextEl: ".prefer-button-next",
+      prevEl: ".prefer-button-prev",
+    },
+    breakpoints: {
+      768: {
+        slidesPerView: 2,
+      },
+      1280: {
+        slidesPerView: 2.4,
+      },
+      1440: {
+        slidesPerView: 2.6,
+      },
+      1600: {
+        slidesPerView: 3,
+      },
+      1920: {
+        slidesPerView: 3.6,
+      },
+    },
+  });
   const clientsSlider = new Swiper(".clients-slider", {
     slidesPerView: 1,
     spaceBetween: 20,

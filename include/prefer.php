@@ -1,0 +1,96 @@
+<section class="prefer">
+    <div class="container-fluid">
+        <div class="title-wrap">
+            <div class="row">
+                <div class="col-lg-8 col-12">
+                    <h2>Why We Prefer <strong>Swift</strong> on Application Development</h2>
+                </div>
+                <div class="col-lg-11 col-12">
+                    <p>This is dummy copy. It is not meant to be read. It has been placed here solely to demonstrate the
+                        look and feel of finished, typeset text. Only for show. He who searches for meaning here will be
+                        sorely disappointed.</p>
+                </div>
+            </div>
+        </div>
+        <div class="prefer-outer">
+            <div class="swiper prefer-slider">
+                <div class="swiper-wrapper">
+                    <div class="swiper-slide">
+                        <div class="service-card edge edge-base edge-primary">
+                            <div class="title">
+                                <h3>A Large Online Community</h3>
+                            </div>
+                            <p>This is dummy copy. It is not meant to be read. It has been placed here solely to
+                                demonstrate the
+                                look and feel of finished, typeset text. This is dummy copy. It is not meant to be read.
+                                It has
+                                been placed here solely to demonstrate the look and feel of finished, typeset text</p>
+                        </div>
+                    </div>
+                    <div class="swiper-slide">
+                        <div class="service-card edge edge-base edge-primary">
+                            <div class="title">
+                                <h3>A Large Online Community</h3>
+                            </div>
+                            <p>This is dummy copy. It is not meant to be read. It has been placed here solely to
+                                demonstrate the
+                                look and feel of finished, typeset text. This is dummy copy. It is not meant to be read.
+                                It has
+                                been placed here solely to demonstrate the look and feel of finished, typeset text</p>
+                        </div>
+                    </div>
+                    <div class="swiper-slide">
+                        <div class="service-card edge edge-base edge-primary">
+                            <div class="title">
+                                <h3>A Large Online Community</h3>
+                            </div>
+                            <p>This is dummy copy. It is not meant to be read. It has been placed here solely to
+                                demonstrate the
+                                look and feel of finished, typeset text. This is dummy copy. It is not meant to be read.
+                                It has
+                                been placed here solely to demonstrate the look and feel of finished, typeset text</p>
+                        </div>
+                    </div>
+                    <div class="swiper-slide">
+                        <div class="service-card edge edge-base edge-primary">
+                            <div class="title">
+                                <h3>A Large Online Community</h3>
+                            </div>
+                            <p>This is dummy copy. It is not meant to be read. It has been placed here solely to
+                                demonstrate the
+                                look and feel of finished, typeset text. This is dummy copy. It is not meant to be read.
+                                It has
+                                been placed here solely to demonstrate the look and feel of finished, typeset text</p>
+                        </div>
+                    </div>
+                    <div class="swiper-slide">
+                        <div class="service-card edge edge-base edge-primary">
+                            <div class="title">
+                                <h3>A Large Online Community</h3>
+                            </div>
+                            <p>This is dummy copy. It is not meant to be read. It has been placed here solely to
+                                demonstrate the
+                                look and feel of finished, typeset text. This is dummy copy. It is not meant to be read.
+                                It has
+                                been placed here solely to demonstrate the look and feel of finished, typeset text</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="vision-btn-wrap">
+                <div class="prefer-button-next">
+                    <svg width="10" height="17" viewBox="0 0 10 17" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <path d="M1.33398 15.5L8.33398 8.5L1.33398 1.5" stroke="white" stroke-width="2"
+                            stroke-linecap="round" stroke-linejoin="round" />
+                    </svg>
+                </div>
+                <div class="prefer-button-prev">
+                    <svg width="10" height="17" viewBox="0 0 10 17" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <path d="M8.66602 15.5L1.66602 8.5L8.66602 1.5" stroke="white" stroke-width="2"
+                            stroke-linecap="round" stroke-linejoin="round" />
+                    </svg>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>

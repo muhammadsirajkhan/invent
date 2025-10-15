@@ -976,7 +976,11 @@ input#cf7-print-btn {
     color: #000;
 }
 
-.vission .container-fluid, .industry .container-fluid, .colab-sec .container-fluid, .zigzag.separate .container-fluid {
+.vission .container-fluid,
+.industry .container-fluid,
+.colab-sec .container-fluid,
+.zigzag.separate .container-fluid,
+.prefer .container-fluid {
     max-width: calc(50vw + (1163px / 2));
     margin-right: 0;
 }
@@ -2607,6 +2611,7 @@ img.ceo-bg {
     color: #757575;
     font-size: var(--font-size-lg);
 }
+
 .banner-service h2 {
     font-size: var(--font-size-5xl);
     line-height: var(--line-height-tight);
@@ -2638,6 +2643,7 @@ img.ceo-bg {
 .banner-service .icon {
     position: relative;
 }
+
 .cap-nav {
     flex: 0 0 370px;
     gap: 10px;
@@ -2659,10 +2665,12 @@ img.ceo-bg {
     display: flex;
     gap: 35px;
 }
+
 .cap-nav .nav-link span {
     color: var(--primary-color);
     font-weight: bold;
 }
+
 .cap-wrap p {
     font-size: var(--font-size-sm);
 }
@@ -2723,7 +2731,10 @@ section.cap-sec {
     background-size: 50px;
 }
 
-.edge-small::after {width: 40px;height: 38px;}
+.edge-small::after {
+    width: 40px;
+    height: 38px;
+}
 
 section.perform {
     background-color: #000;
@@ -2757,7 +2768,7 @@ section.perform {
 
 .perf-card::before {
     counter-increment: section;
-    content: "0"counter(section);
+    content: "0" counter(section);
     position: absolute;
     top: -56px;
     color: #757575;
@@ -2831,7 +2842,8 @@ section.perform {
     width: max-content;
 }
 
-.core-tab .nav-link, .core-tab .nav-link.active {
+.core-tab .nav-link,
+.core-tab .nav-link.active {
     border: unset;
 }
 
@@ -2866,7 +2878,8 @@ img.icon-core {
     top: 18px;
 }
 
-.zigzag.separate .icon img, .zigzag.separate .icon {
+.zigzag.separate .icon img,
+.zigzag.separate .icon {
     aspect-ratio: 605/839;
     object-fit: cover;
     object-position: center;
@@ -2905,21 +2918,26 @@ img.icon-core {
     max-width: 574px;
 }
 
-.zigzag.separate h2 {font-size: var(--font-size-6xl);line-height: var(--line-height-tight);}
-
-.zigzag.separate p {
-    font-size: var(--font-size-lg);
-}
-.zigzag.separate h2 strong {
-    color: var(--primary-color);
-}
-
-.service-best  .content h2 {
+.zigzag.separate h2 {
     font-size: var(--font-size-6xl);
     line-height: var(--line-height-tight);
 }
 
-.service-best .about-faq .accordion-button, .service-best .about-faq .accordion-body {
+.zigzag.separate p {
+    font-size: var(--font-size-lg);
+}
+
+.zigzag.separate h2 strong {
+    color: var(--primary-color);
+}
+
+.service-best .content h2 {
+    font-size: var(--font-size-6xl);
+    line-height: var(--line-height-tight);
+}
+
+.service-best .about-faq .accordion-button,
+.service-best .about-faq .accordion-body {
     /* padding: 50px 50px; */
 }
 
@@ -2999,6 +3017,7 @@ img.icon-core {
     align-items: center;
     gap: 15px;
 }
+
 .vision-outer .row>*:nth-child(even) {
     transform: translateY(-50px);
 }
@@ -3009,4 +3028,28 @@ img.icon-core {
     display: -webkit-box;
     -webkit-box-orient: vertical;
     -webkit-line-clamp: 3;
+}
+
+.prefer-slider .service-card .title h3 {
+    font-size: var(--font-size-2xl);
+    font-weight: bold;
+    max-width: 273px;
+    line-height: var(--line-height-tight);
+}
+
+.prefer-slider .service-card p {
+    max-width: 100%;
+    margin: 0;
+}
+
+.prefer .vision-btn-wrap>* {
+    background-color: var(--primary-color);
+}
+
+.prefer .vision-btn-wrap>* svg path {
+    stroke: #fff;
+}
+
+.prefer .vision-btn-wrap>*:hover{
+    background-color: #000;
 }
