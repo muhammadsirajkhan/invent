@@ -463,11 +463,13 @@ section.contact-section::before {
 }
 
 .contact-icon {
-    width: 120px;
-    height: auto;
+    width: 127px;
+    height: 127px;
     -webkit-animation: spin 4s linear infinite;
     -moz-animation: spin 4s linear infinite;
     animation: spin 4s linear infinite;
+    object-fit: contain;
+    object-position: center;
 }
 
 .contact-left h2,
@@ -3116,4 +3118,26 @@ section.expert {
 }
 .growth .service-bottom::after {
     height: 9%;
+}
+section.features {
+    background-color: #F5F5F5;
+    padding-bottom: var(--spacing-5xl);
+    padding-top: 150px;
+}
+
+.features-outer .icon {
+    height: 100%;
+    /* background-color: #ddd; */
+    overflow: hidden;
+}
+
+.feature-card {
+    background-color: #fff;
+}
+
+.features-outer .icon img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    border-radius: 20px;
 }

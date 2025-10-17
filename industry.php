@@ -6,6 +6,7 @@ $footer_grey = true;
 
 <hr>
 <?php include 'include/growth.php'; ?>
+<?php include 'include/features.php'; ?>
 <hr>
 <?php include 'include/experties.php'; ?>
 <hr>

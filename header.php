@@ -42,7 +42,7 @@
                         <!-- Logo -->
                         <a class="navbar-brand" href="index.php">
                             <!-- <img src="assets/images/logo.svg" alt="TekInvent" class="logo"> -->
-                            <div class="logo">
+                            <!-- <div class="logo">
                                 <span class="logo-icon">
                                     <svg width="41" height="43" viewBox="0 0 41 43" fill="none"
                                         xmlns="http://www.w3.org/2000/svg">
@@ -57,7 +57,7 @@
                                 <span class="logo-content">
                                     <img src="assets/images/logo-content.svg" alt="TekInvent">
                                 </span>
-                            </div>
+                            </div> -->
                         </a>
 
                         <!-- Mobile Menu Toggle Button -->

@@ -37,7 +37,7 @@
             <div class="tab-content core-content" id="myTabContent">
                 <div class="tab-pane fade show active" id="1-tab-pane" role="tabpanel" aria-labelledby="1-tab"
                     tabindex="0">
-                    <div class="row">
+                    <div class="row gy-3">
                         <div class="col-xl-2 col-12">
                             <div class="core-card edge edge-base edge-primary">
                                 <img src="assets/images/services/core-1.png" alt="">
@@ -77,7 +77,7 @@
                     </div>
                 </div>
                 <div class="tab-pane fade" id="2-tab-pane" role="tabpanel" aria-labelledby="2-tab" tabindex="0">
-                    <div class="row">
+                    <div class="row gy-3">
                         <div class="col-xl-2 col-12">
                             <div class="core-card edge edge-base edge-primary">
                                 <img src="assets/images/services/core-1.png" alt="">
@@ -117,7 +117,7 @@
                     </div>
                 </div>
                 <div class="tab-pane fade" id="3-tab-pane" role="tabpanel" aria-labelledby="3-tab" tabindex="0">
-                    <div class="row">
+                    <div class="row gy-3">
                         <div class="col-xl-2 col-12">
                             <div class="core-card edge edge-base edge-primary">
                                 <img src="assets/images/services/core-1.png" alt="">
@@ -157,7 +157,7 @@
                     </div>
                 </div>
                 <div class="tab-pane fade" id="4-tab-pane" role="tabpanel" aria-labelledby="4-tab" tabindex="0">
-                    <div class="row">
+                    <div class="row gy-3">
                         <div class="col-xl-2 col-12">
                             <div class="core-card edge edge-base edge-primary">
                                 <img src="assets/images/services/core-1.png" alt="">
