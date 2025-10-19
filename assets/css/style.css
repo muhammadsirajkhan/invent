@@ -2469,7 +2469,7 @@ a.btn.btn-outline-primary:hover::after {
 .banner-sec .banner {
     position: relative;
     z-index: 1;
-    padding-top: 14vw;
+    padding-top: 6vw;
     padding-bottom: 8vw;
 }
 
@@ -3052,14 +3052,14 @@ img.icon-core {
     stroke: #fff;
 }
 
-.prefer .vision-btn-wrap>*:hover{
+.prefer .vision-btn-wrap>*:hover {
     background-color: #000;
 }
 
 section.expert {
-    background-color: #F5F5F5;
     padding-top: var(--spacing-5xl);
     padding-bottom: var(--spacing-5xl);
+    background-color: #F5F5F5;
 }
 
 .expert-flex {
@@ -3082,9 +3082,14 @@ section.expert {
     color: #757575;
 }
 
-.expert-nav .nav-link.active {background-color: #fff;color: #000;font-weight: bold;}
+.expert-nav .nav-link.active {
+    background-color: #fff;
+    color: #000;
+    font-weight: bold;
+}
 
-.expert-wrap .row, .expert-content .tab-pane {
+.expert-wrap .row,
+.expert-content .tab-pane {
     height: 100%;
 }
 
@@ -3095,7 +3100,10 @@ section.expert {
 }
 
 
-.expert-wrap .content {padding-left: 65px;}
+.expert-wrap .content {
+    padding-left: 65px;
+}
+
 .expert-wrap .icon {
     text-align: center;
 }
@@ -3116,9 +3124,11 @@ section.expert {
     margin-left: auto;
     margin-right: auto;
 }
+
 .growth .service-bottom::after {
     height: 9%;
 }
+
 section.features {
     background-color: #F5F5F5;
     padding-bottom: var(--spacing-5xl);
@@ -3140,4 +3150,50 @@ section.features {
     height: 100%;
     object-fit: cover;
     border-radius: 20px;
+}
+
+
+.standout .main-image img {
+    aspect-ratio: 700/176;
+    border-radius: 20px;
+    object-fit: cover;
+}
+
+section.expert.standout {
+    background-color: #fff;
+    padding: 0;
+}
+
+.standout .expert-nav .nav-link.active {
+    background-color: #F5F5F5;
+}
+
+.standout .expert-wrap .content {
+    padding: 0;
+}
+
+.standout .expert-wrap .row,
+.standout .expert-content .tab-pane {
+    height: auto;
+}
+.standout .expert-wrap .content h3 {
+    font-size: var(--font-size-2xl);
+}
+.standout .expert-wrap .content p {
+ margin: 0;
+}
+.standout .expert-nav {
+    flex: 0 0 397px;
+}
+.zigzag.separate.bg::before {
+    background-color: #000;
+}
+
+.zigzag.separate.bg h2, .zigzag.separate.bg p {
+    color: #fff;
+}
+
+.zigzag.separate.bg .icon img, .zigzag.separate.bg .icon {
+    aspect-ratio: 625/445;
+    aspect-ratio: 625/625;
 }

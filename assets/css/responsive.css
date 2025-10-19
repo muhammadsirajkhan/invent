@@ -147,6 +147,12 @@
 }
 
 @media only screen and (min-width: 100px) and (max-width: 1499px) {
+
+    .zigzag.separate.bg .icon img,
+    .zigzag.separate.bg .icon {
+        aspect-ratio: 625 / 445;
+    }
+
     .zigzag.separate .container {
         max-width: calc(50vw + (1163px / 2));
         margin-right: 0;
@@ -175,9 +181,21 @@
     .zigzag.separate::before {
         right: 42.7%;
     }
+
+    .zigzag.separate.bg .icon img,
+    .zigzag.separate.bg .icon {
+        aspect-ratio: 625 / 485;
+    }
+
 }
 
 @media only screen and (min-width: 100px) and (max-width: 1299px) {
+
+    .zigzag.separate.bg .icon img,
+    .zigzag.separate.bg .icon {
+        aspect-ratio: 625 / 565;
+    }
+
     .awards-btn-wrap>* {
         position: unset;
         transform: unset;

@@ -19,7 +19,7 @@
                 </div>
                 <div class="col-lg-6 col-12">
                     <div class="icon">
-                        <img src="assets/images/tech/tech-edit.png" alt="">
+                        <!-- <img src="assets/images/tech/tech-edit.png" alt=""> -->
                     </div>
                 </div>
             </div>
