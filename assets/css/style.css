@@ -3197,3 +3197,36 @@ section.expert.standout {
     aspect-ratio: 625/445;
     aspect-ratio: 625/625;
 }
+
+.vission.portfolio {
+    padding: 0;
+    background-color: #fff;
+}
+.portfolio-card {
+    background: #F5F5F5;
+    padding: 30px;
+    border-radius: 30px;
+}
+
+.portfolio-card .title h3 {
+    font-size: var(--font-size-3xl);
+    width: 100%;
+}
+
+.portfolio-card .title {
+    margin-bottom: 17px;
+}
+
+.portfolio-card .icon {
+    margin-bottom: 25px;
+    border-radius: unset;
+}
+
+.portfolio-card p {
+    margin-bottom: 17px;
+    -webkit-line-clamp: 6;
+}
+
+.portfolio-card .icon img {
+    border-radius: 20px;
+}
