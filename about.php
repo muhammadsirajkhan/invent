@@ -7,7 +7,7 @@
 
 <section class="trust-section">
     <div class="container">
-        <div class="title-wrap">
+        <div class="title-wrap wow fadeInUp" data-wow-delay="0.2s">
             <div class="row justify-content-between gy-4">
                 <div class="col-lg-5 col-12">
                     <h2>Your Trusted Partner in <strong>Digital Innovation</strong></h2>
@@ -200,20 +200,26 @@
                 <div class="content">
                     <h2>What We <strong>Do Best</strong></h2>
                     <p>
-                        This is dummy copy. It is not meant to be read. It has been placed here solely to demonstrate the
-                        look and feel of finished, typeset text. This is dummy copy. It is not meant to be read. It has been
-                        placed here solely to demonstrate the look and feel of finished, typeset text. This is dummy copy.
+                        This is dummy copy. It is not meant to be read. It has been placed here solely to demonstrate
+                        the
+                        look and feel of finished, typeset text. This is dummy copy. It is not meant to be read. It has
+                        been
+                        placed here solely to demonstrate the look and feel of finished, typeset text. This is dummy
+                        copy.
                         It is not meant to be read.
                     </p>
 
                     <p>
-                        This is dummy copy. It is not meant to be read. It has been placed here solely to demonstrate the
-                        look and feel of finished, typeset text. This is dummy copy. It is not meant to be read. It has been
+                        This is dummy copy. It is not meant to be read. It has been placed here solely to demonstrate
+                        the
+                        look and feel of finished, typeset text. This is dummy copy. It is not meant to be read. It has
+                        been
                         placed here solely to demonstrate the look and feel of finished, typeset text.
                     </p>
 
                     <p>
-                        This is dummy copy. It is not meant to be read. It has been placed here solely to demonstrate the
+                        This is dummy copy. It is not meant to be read. It has been placed here solely to demonstrate
+                        the
                         look and feel of finished, typeset text.
                     </p>
                 </div>

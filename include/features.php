@@ -1,6 +1,6 @@
 <section class="features">
     <div class="container">
-        <div class="title-wrap">
+        <div class="title-wrap wow fadeInUp" data-wow-delay="0.2s">
             <div class="row justify-content-between">
                 <div class="col-lg-5 col-12">
                     <h2>Essential Features for <strong>Healthcare App Development</strong></h2>

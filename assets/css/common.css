@@ -827,7 +827,7 @@ textarea.form-control {
     margin-top: var(--spacing-8);
 }
 
-.form-control.is-invalid ~ .invalid-feedback {
+.form-control.is-invalid~.invalid-feedback {
     display: block;
 }
 
@@ -881,6 +881,7 @@ textarea.form-control {
     font-size: var(--font-size-16);
     font-family: var(--font-primary);
     color: var(--text-dark);
+    color: var(--bs-body-color);
     background-color: #F5F5F5;
     border: 1px solid transparent;
     border-radius: var(--border-radius-md);
@@ -906,7 +907,9 @@ textarea.form-control {
 .wpcf7-form textarea:focus,
 .wpcf7-form select:focus {
     background-color: #ffffff;
+    background-color: #F5F5F5;
     border-color: var(--primary-color);
+    border-color: transparent;
     box-shadow: 0 0 0 3px rgba(168, 102, 236, 0.1);
 }
 
@@ -920,6 +923,8 @@ textarea.form-control {
 .wpcf7-form textarea:hover,
 .wpcf7-form select:hover {
     border-color: #E0E0E0;
+    border-color: transparent;
+    background-color: #F5F5F5;
 }
 
 /* CF7 Textarea Specific */
@@ -1040,7 +1045,7 @@ textarea.form-control {
     margin-bottom: var(--spacing-16);
 }
 
-.wpcf7-form .form-row-cf7 > p {
+.wpcf7-form .form-row-cf7>p {
     flex: 1;
     margin-bottom: 0;
 }
@@ -1089,6 +1094,7 @@ textarea.form-control {
 
 /* CF7 Responsive Styles */
 @media (max-width: 767px) {
+
     .wpcf7-form input[type="text"],
     .wpcf7-form input[type="email"],
     .wpcf7-form input[type="tel"],

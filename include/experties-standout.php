@@ -1,6 +1,6 @@
 <section class="expert standout">
     <div class="container">
-        <div class="title-wrap text-center">
+        <div class="title-wrap text-center wow fadeInUp" data-wow-delay="0.2s">
             <div class="row justify-content-between">
                 <div class="col-lg-12 col-12">
                     <h2>Why We Stand Out in <strong>Medical App Development</strong></h2>

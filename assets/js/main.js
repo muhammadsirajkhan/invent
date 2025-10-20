@@ -1,4 +1,5 @@
 // Main JavaScript file for TekInvent website
+new WOW().init();
 
 document.addEventListener("DOMContentLoaded", function () {
   // Initialize all components
@@ -608,11 +609,12 @@ function initSwiper() {
   const awardSlider = new Swiper(".award-slider", {
     slidesPerView: 1,
     spaceBetween: 30,
-    loop: false,
-    // autoplay: {
-    //   delay: 5000,
-    //   disableOnInteraction: false,
-    // },
+    loop: true,
+    speed: 1000,
+    autoplay: {
+      delay: 1500,
+      disableOnInteraction: false,
+    },
     navigation: {
       nextEl: ".awards-button-next",
       prevEl: ".awards-button-prev",
@@ -653,13 +655,43 @@ function initSwiper() {
       },
     },
   });
+  const relatedSlider = new Swiper(".related-slider", {
+    slidesPerView: 1,
+    spaceBetween: 30,
+    loop: false,
+    // autoplay: {
+    //   delay: 5000,
+    //   disableOnInteraction: false,
+    // },
+    navigation: {
+      nextEl: ".related-button-next",
+      prevEl: ".related-button-prev",
+    },
+    breakpoints: {
+      768: {
+        slidesPerView: 2,
+      },
+      1024: {
+        slidesPerView: 3,
+      },
+      1920: {
+        slidesPerView: 3,
+      },
+    },
+  });
   const colabSlider = new Swiper(".colab-slider", {
     slidesPerView: 2,
     spaceBetween: 30,
-    loop: false,
+    loop: true,
+    speed: 3000,
+    // autoplay: {
+    //   delay: 2500,
+    //   disableOnInteraction: false,
+    // },
+    allowTouchMove: false,
     autoplay: {
-      delay: 2500,
-      disableOnInteraction: false,
+      delay: 0, // 1 millisecond delay: we’re moving nonstop. Try 0 here too :).
+      disableOnInteraction: false, // If someone tries to touch, let them fail in peace
     },
     navigation: {
       nextEl: ".blog-button-next",
@@ -1090,5 +1122,69 @@ function updateTOCActiveState() {
     } else {
       link.classList.remove("active");
     }
+  });
+}
+
+// ============================================
+// NUMBER COUNTER FUNCTIONALITY
+// ============================================
+
+function animateCounter(element) {
+  const target = parseInt(element.dataset.target);
+  const duration = 2000; // Animation duration in milliseconds (2 seconds)
+  const startTime = performance.now();
+  const startValue = 0;
+
+  // Add suffix support (e.g., "+" or "%" or "K")
+  const suffix = element.dataset.suffix || '';
+
+  // Format number with leading zero for single digits
+  const formatNumber = (num) => {
+    if (num < 10) {
+      return '0' + num;
+    }
+    return num.toString();
+  };
+
+  const updateCounter = (currentTime) => {
+    const elapsed = currentTime - startTime;
+    const progress = Math.min(elapsed / duration, 1);
+
+    // Easing function for smoother animation (easeOutExpo)
+    const easeOutExpo = progress === 1 ? 1 : 1 - Math.pow(2, -10 * progress);
+    
+    const current = Math.round(startValue + (target - startValue) * easeOutExpo);
+    element.textContent = formatNumber(current) + suffix;
+
+    if (progress < 1) {
+      requestAnimationFrame(updateCounter);
+    } else {
+      element.textContent = formatNumber(target) + suffix; // Ensure final value is exact
+    }
+  };
+
+  requestAnimationFrame(updateCounter);
+}
+
+// Intersection Observer to trigger animation on scroll for all counter elements
+const counterElements = document.querySelectorAll('.counter');
+
+if (counterElements.length > 0) {
+  const counterObserver = new IntersectionObserver(
+    (entries) => {
+      entries.forEach((entry) => {
+        if (entry.isIntersecting && !entry.target.classList.contains('counted')) {
+          entry.target.classList.add('counted'); // Prevent re-animation
+          animateCounter(entry.target);
+          counterObserver.unobserve(entry.target); // Stop observing once animated
+        }
+      });
+    },
+    { threshold: 0.3 } // Trigger when 30% of element is visible
+  );
+
+  // Observe all counter elements
+  counterElements.forEach((counter) => {
+    counterObserver.observe(counter);
   });
 }

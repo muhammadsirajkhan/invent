@@ -1,6 +1,6 @@
 <section class="prefer">
     <div class="container">
-        <div class="title-wrap">
+        <div class="title-wrap wow fadeInUp" data-wow-delay="0.2s">
             <div class="row">
                 <div class="col-lg-8 col-12">
                     <h2>Why We Prefer <strong>Swift</strong> on Application Development</h2>

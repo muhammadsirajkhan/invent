@@ -74,7 +74,7 @@
 
             </div>
             <div class="col-lg-6 col-12">
-                <div class="title-wrap text-white">
+                <div class="title-wrap text-white wow fadeInUp" data-wow-delay="0.2s">
                     <h2>A <strong>Process</strong> That <br>Delivers</h2>
                     <p>This is dummy copy. It is not meant to be read. It has been placed here solely to demonstrate the
                         look and feel of finished, typeset text. Only for show. He who searches for meaning here will be

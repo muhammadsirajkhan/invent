@@ -416,7 +416,7 @@ HOME BANNER
 }
 
 .social-link:hover {
-    background-color: rgba(168, 102, 236, 0.1);
+    background-color: var(--primary-color);
     transform: translateY(-3px);
 }
 
@@ -521,29 +521,36 @@ section.contact-section::before {
 
 .contact-form .form-control {
     height: 50px;
-    padding: 15px 20px;
-    font-size: var(--font-size-14);
+    padding: 15px 20px !important;
+    font-size: var(--font-size-14) !important;
     background: #F5F5F5;
     border: 1px solid transparent;
-    border-radius: 50px;
+    border-radius: 50px !important;
+}
+
+.contact-form .wpcf7-form button[type="submit"],
+.contact-form .wpcf7-submit {
+    max-width: min-content;
 }
 
 .contact-form textarea.form-control {
-    height: 150px;
-    padding: var(--spacing-16);
+    height: 150px !important;
+    padding: var(--spacing-16) !important;
     resize: none;
-    border-radius: 16px;
+    border-radius: 16px !important;
 }
 
-.contact-form .btn-submit {
+.contact-form .btn-submit,
+.contact-form .wpcf7-form button[type="submit"],
+.contact-form .wpcf7-submit {
     margin-top: 0;
     height: 50px;
-    font-size: var(--font-size-18);
+    font-size: var(--font-size-18) !important;
     font-weight: var(--font-weight-semibold);
     border-radius: 50px;
     line-height: 1;
     font-size: 16px;
-    border: 2px solid var(--primary-color);
+    border: 2px solid var(--primary-color) !important;
 }
 
 
@@ -592,7 +599,11 @@ section.contact-section::before {
 }
 
 /* CF7 Submit Button in Contact Section */
+.contact-form-wrapper .wpcf7-submit,
+.contact-form-wrapper .wpcf7-form button[type="submit"],
 .contact-form-wrapper .wpcf7-submit {
+    width: 100%;
+    max-width: 100%;
     height: 50px;
     margin-top: 0 !important;
     line-height: 1;
@@ -988,7 +999,7 @@ input#cf7-print-btn {
 }
 
 section.inner-banner {
-    background-color: #EAF3F0;
+    background-color: #F5F5F5;
     padding-top: calc(var(--spacing-120) + 50px);
     padding-bottom: var(--spacing-4xl);
     position: relative;
@@ -1011,15 +1022,15 @@ section.inner-banner {
     max-width: 935px;
     height: auto;
     position: absolute;
-    top: -14%;
-    left: -11%;
+    top: 0%;
+    left: -16%;
     z-index: 0;
 }
 
 .inner-banner .line-2 {
     left: auto;
-    right: -18%;
-    top: 13%;
+    right: -9%;
+    top: 4%;
 }
 
 .blog-card .icon img {
@@ -1084,7 +1095,7 @@ section.inner-banner {
 }
 
 .author span {
-    display: block;
+    display: block !important;
 }
 
 .author {
@@ -1176,6 +1187,9 @@ section.inner-banner {
 
 .inner-banner ul li>span {
     font-size: var(--font-size-sm);
+    display: flex;
+    align-items: center;
+    gap: 5px;
 }
 
 .inner-banner ul li:has(.author) {
@@ -1631,10 +1645,13 @@ section.inner-banner {
     font-size: var(--font-size-lg);
 }
 
-.success-card .left span.number {
+.success-card .left span.number, .success-card .left span.number span {
     font-size: var(--font-size-5xl);
     font-weight: bold;
     line-height: 1;
+}
+.success-card .left span.number span {
+    display: inline-block;
 }
 
 span.border-top,
@@ -2214,31 +2231,63 @@ section.process .container {
     background: #F5F5F5;
     border-radius: 20px;
     gap: 5px;
+    transition: var(--transition-normal);
 }
 
 .contact-box .title {
     font-size: var(--font-size-lg);
     text-transform: uppercase;
     letter-spacing: 2px;
+    transition: var(--transition-normal);
 }
 
 .contact-box .link {
     font-size: var(--font-size-sm);
     color: var(--primary-color);
     font-weight: 400;
+    transition: var(--transition-normal);
+}
+
+.contact-box:hover {
+    background-color: #000;
+}
+
+.contact-box:hover::after {
+    background-color: var(--primary-color);
+}
+
+.contact-box:hover .title {
+    color: #fff;
+}
+
+.contact-box:hover .link {
+    color: #fff;
 }
 
 .contact-main-left .title {
-    background-color: #F5F5F5;
+    background-color: #000000;
     padding: 45px 30px 230px;
     text-align: center;
     border-radius: 20px;
     max-width: 458px;
+    position: relative;
+    overflow: hidden;
+}
+
+.contact-main-left .title img {
+    position: absolute;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: auto;
 }
 
 .contact-main-left .title h2 {
     font-size: var(--font-size-5xl);
     font-weight: 400;
+    color: #fff;
+    position: relative;
+    z-index: 1;
 }
 
 .contact-main-left .image img {
@@ -2246,6 +2295,8 @@ section.process .container {
     height: auto;
     margin-top: -240px;
     width: auto;
+    position: relative;
+    z-index: 1;
 }
 
 .contact-main-left .title h2 strong {
@@ -2258,7 +2309,7 @@ section.process .container {
 }
 
 .contact-main textarea.form-control {
-    height: 254px;
+    height: 254px !important;
 }
 
 .contact-main .form-control {
@@ -2267,6 +2318,8 @@ section.process .container {
 
 .contact-main .form-group label {
     margin-bottom: 10px;
+    font-size: 16px;
+    color: #000;
 }
 
 .find-card img {
@@ -2361,7 +2414,9 @@ section.find-sec {
     line-height: 1;
     padding: 20px 0;
 }
-
+.trust-tab .nav-link:focus, .trust-tab .nav-link:hover {
+    border-color: transparent;
+}
 .trust-tab .nav-link.active {
     background-color: #F5F5F5;
     color: var(--primary-color);
@@ -2469,7 +2524,7 @@ a.btn.btn-outline-primary:hover::after {
 .banner-sec .banner {
     position: relative;
     z-index: 1;
-    padding-top: 6vw;
+    padding-top: 0vw;
     padding-bottom: 8vw;
 }
 
@@ -2580,7 +2635,7 @@ img.ceo-bg {
 
 .about-faq .accordion-body {
     font-size: var(--font-size-base);
-    padding: 50px 30px 0;
+    padding: 50px 30px 30px;
 }
 
 .best .content h2 {
@@ -2940,7 +2995,7 @@ img.icon-core {
 
 .service-best .about-faq .accordion-button,
 .service-best .about-faq .accordion-body {
-    /* padding: 50px 50px; */
+    padding: 50px 30px 0px;
 }
 
 .service-best .about-faq .accordion-item {
@@ -3176,24 +3231,30 @@ section.expert.standout {
 .standout .expert-content .tab-pane {
     height: auto;
 }
+
 .standout .expert-wrap .content h3 {
     font-size: var(--font-size-2xl);
 }
+
 .standout .expert-wrap .content p {
- margin: 0;
+    margin: 0;
 }
+
 .standout .expert-nav {
     flex: 0 0 397px;
 }
+
 .zigzag.separate.bg::before {
     background-color: #000;
 }
 
-.zigzag.separate.bg h2, .zigzag.separate.bg p {
+.zigzag.separate.bg h2,
+.zigzag.separate.bg p {
     color: #fff;
 }
 
-.zigzag.separate.bg .icon img, .zigzag.separate.bg .icon {
+.zigzag.separate.bg .icon img,
+.zigzag.separate.bg .icon {
     aspect-ratio: 625/445;
     aspect-ratio: 625/625;
 }
@@ -3202,6 +3263,7 @@ section.expert.standout {
     padding: 0;
     background-color: #fff;
 }
+
 .portfolio-card {
     background: #F5F5F5;
     padding: 30px;
@@ -3229,4 +3291,48 @@ section.expert.standout {
 
 .portfolio-card .icon img {
     border-radius: 20px;
+}
+
+.colab-slider .swiper-wrapper {
+    transition-timing-function: linear !important;
+}
+
+section.related {
+    background-color: #F5F5F5;
+    padding-top: var(--spacing-5xl);
+    padding-bottom: var(--spacing-5xl);
+}
+
+.related .blog-card {
+    background-color: #fff;
+}
+.related-outer {
+    position: relative;
+}
+
+.related-button-next {
+    right: -80px;
+}
+
+.related-button-prev {
+    left: -80px;
+}
+
+.related-button-prev, .related-button-next {
+    height: 52px;
+    width: 52px;
+    line-height: 52px;
+    background-color: #fff;
+}
+.related-button-prev svg path, .related-button-next svg path {
+    stroke: var(--primary-color);
+    transition: var(--transition-normal);
+}
+
+.related-button-prev:hover svg path, .related-button-next:hover svg path {
+    stroke: #fff;
+}
+
+.faq-blog .accordion-button:not(.collapsed)::after {
+    background-image: url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 16 16' fill='%23ffffff'%3e%3cpath fill-rule='evenodd' d='M1.646 4.646a.5.5 0 0 1 .708 0L8 10.293l5.646-5.647a.5.5 0 0 1 .708.708l-6 6a.5.5 0 0 1-.708 0l-6-6a.5.5 0 0 1 0-.708z'/%3e%3c/svg%3e");
 }

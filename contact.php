@@ -37,10 +37,11 @@ $footer_grey = true;
             <div class="col-lg-4 col-12">
                 <div class="contact-main-left">
                     <div class="title">
+                        <img src="assets/images/shade-contact.png" alt="">
                         <h2>INNOVATE <strong>BUILD</strong> IMPACT</h2>
                     </div>
                     <div class="image">
-                        <img src="assets/images/contact.png" alt="">
+                        <img src="assets/images/contact-black.png" alt="">
                     </div>
                 </div>
             </div>
@@ -94,7 +95,7 @@ $footer_grey = true;
 <hr>
 <section class="find-sec">
     <div class="container">
-        <div class="title-wrap">
+        <div class="title-wrap wow fadeInUp" data-wow-delay="0.2s">
             <div class="row">
                 <div class="col-lg-4 col-12">
                     <h2>Where to <br><strong>Find Us</strong></h2>

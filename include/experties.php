@@ -1,6 +1,6 @@
 <section class="expert">
     <div class="container">
-        <div class="title-wrap">
+        <div class="title-wrap wow fadeInUp" data-wow-delay="0.2s">
             <div class="row justify-content-between">
                 <div class="col-lg-4 col-12">
                     <h2>Our Expertise in <strong>Swift</strong></h2>

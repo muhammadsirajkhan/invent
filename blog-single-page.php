@@ -4,7 +4,7 @@
 <?php include 'inner-banner-single-blog.php'; ?>
 
 <hr>
-<secion class="blog-single">
+<section class="blog-single">
     <div class="container">
         <div class="row">
             <div class="col-lg-9 col-12">
@@ -289,7 +289,240 @@
             </div>
         </div>
     </div>
-</secion>
-
+</section>
 <hr>
+<section class="related">
+    <div class="container">
+        <div class="row">
+            <div class="col-lg-12 col-12">
+                <div class="title-wrap text-center wow fadeInUp" data-wow-delay="0.2s">
+                    <h2>Related <strong>Blog</strong></h2>
+                </div>
+                <div class="related-outer">
+                    <div class="swiper related-slider">
+                        <div class="swiper-wrapper">
+                            <div class="swiper-slide">
+                                <div class="blog-card">
+                                    <div class="icon edge edge-base">
+                                        <img src="assets/images/sample.png" alt="">
+                                    </div>
+                                    <div class="title">
+                                        <h2>Dummy Title of Blog</h2>
+                                        <span class="date">02 October, 2025</span>
+                                    </div>
+                                    <p>This is dummy copy. It is not meant to be read. This is dummy copy. It is not
+                                        meant
+                                        to be read. This is dummy copy. It is not meant to be read.</p>
+                                    <div class="author">
+                                        <img src="assets/images/author.jpg" alt="">
+                                        <div class="info">
+                                            <span class="name">John Doe</span>
+                                            <span class="verified">
+                                                <svg width="7" height="6" viewBox="0 0 7 6" fill="none"
+                                                    xmlns="http://www.w3.org/2000/svg">
+                                                    <path
+                                                        d="M2.37986 5.4474L0.151978 3.23285C0.0897218 3.1706 0.0585938 3.09056 0.0585938 2.99272C0.0585938 2.89489 0.0897218 2.81485 0.151978 2.75259L0.645581 2.27233C0.707837 2.20118 0.785657 2.16561 0.879041 2.16561C0.972426 2.16561 1.05469 2.20118 1.12584 2.27233L2.61999 3.76648L5.82174 0.564733C5.89289 0.493583 5.97515 0.458008 6.06854 0.458008C6.16192 0.458008 6.23974 0.493583 6.302 0.564733L6.7956 1.04499C6.85786 1.10725 6.88899 1.18729 6.88899 1.28513C6.88899 1.38296 6.85786 1.463 6.7956 1.52526L2.86012 5.4474C2.79787 5.51855 2.71782 5.55412 2.61999 5.55412C2.52216 5.55412 2.44212 5.51855 2.37986 5.4474Z"
+                                                        fill="#A866EC" />
+                                                </svg>
+                                                Verified writer</span>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="swiper-slide">
+                                <div class="blog-card">
+                                    <div class="icon edge edge-base">
+                                        <img src="assets/images/sample.png" alt="">
+                                    </div>
+                                    <div class="title">
+                                        <h2>Dummy Title of Blog</h2>
+                                        <span class="date">02 October, 2025</span>
+                                    </div>
+                                    <p>This is dummy copy. It is not meant to be read. This is dummy copy. It is not
+                                        meant
+                                        to be read. This is dummy copy. It is not meant to be read.</p>
+                                    <div class="author">
+                                        <img src="assets/images/author.jpg" alt="">
+                                        <div class="info">
+                                            <span class="name">John Doe</span>
+                                            <span class="verified">
+                                                <svg width="7" height="6" viewBox="0 0 7 6" fill="none"
+                                                    xmlns="http://www.w3.org/2000/svg">
+                                                    <path
+                                                        d="M2.37986 5.4474L0.151978 3.23285C0.0897218 3.1706 0.0585938 3.09056 0.0585938 2.99272C0.0585938 2.89489 0.0897218 2.81485 0.151978 2.75259L0.645581 2.27233C0.707837 2.20118 0.785657 2.16561 0.879041 2.16561C0.972426 2.16561 1.05469 2.20118 1.12584 2.27233L2.61999 3.76648L5.82174 0.564733C5.89289 0.493583 5.97515 0.458008 6.06854 0.458008C6.16192 0.458008 6.23974 0.493583 6.302 0.564733L6.7956 1.04499C6.85786 1.10725 6.88899 1.18729 6.88899 1.28513C6.88899 1.38296 6.85786 1.463 6.7956 1.52526L2.86012 5.4474C2.79787 5.51855 2.71782 5.55412 2.61999 5.55412C2.52216 5.55412 2.44212 5.51855 2.37986 5.4474Z"
+                                                        fill="#A866EC" />
+                                                </svg>
+                                                Verified writer</span>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="swiper-slide">
+                                <div class="blog-card">
+                                    <div class="icon edge edge-base">
+                                        <img src="assets/images/sample.png" alt="">
+                                    </div>
+                                    <div class="title">
+                                        <h2>Dummy Title of Blog</h2>
+                                        <span class="date">02 October, 2025</span>
+                                    </div>
+                                    <p>This is dummy copy. It is not meant to be read. This is dummy copy. It is not
+                                        meant
+                                        to be read. This is dummy copy. It is not meant to be read.</p>
+                                    <div class="author">
+                                        <img src="assets/images/author.jpg" alt="">
+                                        <div class="info">
+                                            <span class="name">John Doe</span>
+                                            <span class="verified">
+                                                <svg width="7" height="6" viewBox="0 0 7 6" fill="none"
+                                                    xmlns="http://www.w3.org/2000/svg">
+                                                    <path
+                                                        d="M2.37986 5.4474L0.151978 3.23285C0.0897218 3.1706 0.0585938 3.09056 0.0585938 2.99272C0.0585938 2.89489 0.0897218 2.81485 0.151978 2.75259L0.645581 2.27233C0.707837 2.20118 0.785657 2.16561 0.879041 2.16561C0.972426 2.16561 1.05469 2.20118 1.12584 2.27233L2.61999 3.76648L5.82174 0.564733C5.89289 0.493583 5.97515 0.458008 6.06854 0.458008C6.16192 0.458008 6.23974 0.493583 6.302 0.564733L6.7956 1.04499C6.85786 1.10725 6.88899 1.18729 6.88899 1.28513C6.88899 1.38296 6.85786 1.463 6.7956 1.52526L2.86012 5.4474C2.79787 5.51855 2.71782 5.55412 2.61999 5.55412C2.52216 5.55412 2.44212 5.51855 2.37986 5.4474Z"
+                                                        fill="#A866EC" />
+                                                </svg>
+                                                Verified writer</span>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="swiper-slide">
+                                <div class="blog-card">
+                                    <div class="icon edge edge-base">
+                                        <img src="assets/images/sample.png" alt="">
+                                    </div>
+                                    <div class="title">
+                                        <h2>Dummy Title of Blog</h2>
+                                        <span class="date">02 October, 2025</span>
+                                    </div>
+                                    <p>This is dummy copy. It is not meant to be read. This is dummy copy. It is not
+                                        meant
+                                        to be read. This is dummy copy. It is not meant to be read.</p>
+                                    <div class="author">
+                                        <img src="assets/images/author.jpg" alt="">
+                                        <div class="info">
+                                            <span class="name">John Doe</span>
+                                            <span class="verified">
+                                                <svg width="7" height="6" viewBox="0 0 7 6" fill="none"
+                                                    xmlns="http://www.w3.org/2000/svg">
+                                                    <path
+                                                        d="M2.37986 5.4474L0.151978 3.23285C0.0897218 3.1706 0.0585938 3.09056 0.0585938 2.99272C0.0585938 2.89489 0.0897218 2.81485 0.151978 2.75259L0.645581 2.27233C0.707837 2.20118 0.785657 2.16561 0.879041 2.16561C0.972426 2.16561 1.05469 2.20118 1.12584 2.27233L2.61999 3.76648L5.82174 0.564733C5.89289 0.493583 5.97515 0.458008 6.06854 0.458008C6.16192 0.458008 6.23974 0.493583 6.302 0.564733L6.7956 1.04499C6.85786 1.10725 6.88899 1.18729 6.88899 1.28513C6.88899 1.38296 6.85786 1.463 6.7956 1.52526L2.86012 5.4474C2.79787 5.51855 2.71782 5.55412 2.61999 5.55412C2.52216 5.55412 2.44212 5.51855 2.37986 5.4474Z"
+                                                        fill="#A866EC" />
+                                                </svg>
+                                                Verified writer</span>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="swiper-slide">
+                                <div class="blog-card">
+                                    <div class="icon edge edge-base">
+                                        <img src="assets/images/sample.png" alt="">
+                                    </div>
+                                    <div class="title">
+                                        <h2>Dummy Title of Blog</h2>
+                                        <span class="date">02 October, 2025</span>
+                                    </div>
+                                    <p>This is dummy copy. It is not meant to be read. This is dummy copy. It is not
+                                        meant
+                                        to be read. This is dummy copy. It is not meant to be read.</p>
+                                    <div class="author">
+                                        <img src="assets/images/author.jpg" alt="">
+                                        <div class="info">
+                                            <span class="name">John Doe</span>
+                                            <span class="verified">
+                                                <svg width="7" height="6" viewBox="0 0 7 6" fill="none"
+                                                    xmlns="http://www.w3.org/2000/svg">
+                                                    <path
+                                                        d="M2.37986 5.4474L0.151978 3.23285C0.0897218 3.1706 0.0585938 3.09056 0.0585938 2.99272C0.0585938 2.89489 0.0897218 2.81485 0.151978 2.75259L0.645581 2.27233C0.707837 2.20118 0.785657 2.16561 0.879041 2.16561C0.972426 2.16561 1.05469 2.20118 1.12584 2.27233L2.61999 3.76648L5.82174 0.564733C5.89289 0.493583 5.97515 0.458008 6.06854 0.458008C6.16192 0.458008 6.23974 0.493583 6.302 0.564733L6.7956 1.04499C6.85786 1.10725 6.88899 1.18729 6.88899 1.28513C6.88899 1.38296 6.85786 1.463 6.7956 1.52526L2.86012 5.4474C2.79787 5.51855 2.71782 5.55412 2.61999 5.55412C2.52216 5.55412 2.44212 5.51855 2.37986 5.4474Z"
+                                                        fill="#A866EC" />
+                                                </svg>
+                                                Verified writer</span>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="swiper-slide">
+                                <div class="blog-card">
+                                    <div class="icon edge edge-base">
+                                        <img src="assets/images/sample.png" alt="">
+                                    </div>
+                                    <div class="title">
+                                        <h2>Dummy Title of Blog</h2>
+                                        <span class="date">02 October, 2025</span>
+                                    </div>
+                                    <p>This is dummy copy. It is not meant to be read. This is dummy copy. It is not
+                                        meant
+                                        to be read. This is dummy copy. It is not meant to be read.</p>
+                                    <div class="author">
+                                        <img src="assets/images/author.jpg" alt="">
+                                        <div class="info">
+                                            <span class="name">John Doe</span>
+                                            <span class="verified">
+                                                <svg width="7" height="6" viewBox="0 0 7 6" fill="none"
+                                                    xmlns="http://www.w3.org/2000/svg">
+                                                    <path
+                                                        d="M2.37986 5.4474L0.151978 3.23285C0.0897218 3.1706 0.0585938 3.09056 0.0585938 2.99272C0.0585938 2.89489 0.0897218 2.81485 0.151978 2.75259L0.645581 2.27233C0.707837 2.20118 0.785657 2.16561 0.879041 2.16561C0.972426 2.16561 1.05469 2.20118 1.12584 2.27233L2.61999 3.76648L5.82174 0.564733C5.89289 0.493583 5.97515 0.458008 6.06854 0.458008C6.16192 0.458008 6.23974 0.493583 6.302 0.564733L6.7956 1.04499C6.85786 1.10725 6.88899 1.18729 6.88899 1.28513C6.88899 1.38296 6.85786 1.463 6.7956 1.52526L2.86012 5.4474C2.79787 5.51855 2.71782 5.55412 2.61999 5.55412C2.52216 5.55412 2.44212 5.51855 2.37986 5.4474Z"
+                                                        fill="#A866EC" />
+                                                </svg>
+                                                Verified writer</span>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="swiper-slide">
+                                <div class="blog-card">
+                                    <div class="icon edge edge-base">
+                                        <img src="assets/images/sample.png" alt="">
+                                    </div>
+                                    <div class="title">
+                                        <h2>Dummy Title of Blog</h2>
+                                        <span class="date">02 October, 2025</span>
+                                    </div>
+                                    <p>This is dummy copy. It is not meant to be read. This is dummy copy. It is not
+                                        meant
+                                        to be read. This is dummy copy. It is not meant to be read.</p>
+                                    <div class="author">
+                                        <img src="assets/images/author.jpg" alt="">
+                                        <div class="info">
+                                            <span class="name">John Doe</span>
+                                            <span class="verified">
+                                                <svg width="7" height="6" viewBox="0 0 7 6" fill="none"
+                                                    xmlns="http://www.w3.org/2000/svg">
+                                                    <path
+                                                        d="M2.37986 5.4474L0.151978 3.23285C0.0897218 3.1706 0.0585938 3.09056 0.0585938 2.99272C0.0585938 2.89489 0.0897218 2.81485 0.151978 2.75259L0.645581 2.27233C0.707837 2.20118 0.785657 2.16561 0.879041 2.16561C0.972426 2.16561 1.05469 2.20118 1.12584 2.27233L2.61999 3.76648L5.82174 0.564733C5.89289 0.493583 5.97515 0.458008 6.06854 0.458008C6.16192 0.458008 6.23974 0.493583 6.302 0.564733L6.7956 1.04499C6.85786 1.10725 6.88899 1.18729 6.88899 1.28513C6.88899 1.38296 6.85786 1.463 6.7956 1.52526L2.86012 5.4474C2.79787 5.51855 2.71782 5.55412 2.61999 5.55412C2.52216 5.55412 2.44212 5.51855 2.37986 5.4474Z"
+                                                        fill="#A866EC" />
+                                                </svg>
+                                                Verified writer</span>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="awards-btn-wrap">
+                        <div class="related-button-next">
+
+                            <svg width="10" height="17" viewBox="0 0 10 17" fill="none"
+                                xmlns="http://www.w3.org/2000/svg">
+                                <path d="M1.33398 15.5L8.33398 8.5L1.33398 1.5" stroke="white" stroke-width="2"
+                                    stroke-linecap="round" stroke-linejoin="round"></path>
+                            </svg>
+
+                        </div>
+                        <div class="related-button-prev">
+
+                            <svg width="10" height="17" viewBox="0 0 10 17" fill="none"
+                                xmlns="http://www.w3.org/2000/svg">
+                                <path d="M8.66602 15.5L1.66602 8.5L8.66602 1.5" stroke="white" stroke-width="2"
+                                    stroke-linecap="round" stroke-linejoin="round"></path>
+                            </svg>
+
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
 <?php include 'footer.php'; ?>

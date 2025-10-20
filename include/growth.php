@@ -1,6 +1,6 @@
 <section class="growth">
     <div class="container">
-        <div class="title-wrap text-center px-lg-4">
+        <div class="title-wrap text-center px-lg-4 wow fadeInUp" data-wow-delay="0.2s">
             <div class="row justify-content-center">
                 <div class="col-lg-9 col-12">
                     <h2>Innovative App Services Tailored for <strong>Healthcare Growth</strong></h2>

@@ -2,7 +2,7 @@
     <img src="assets/images/shade-awards-1.png" class="shade-awards shade-awards-1" alt="">
     <img src="assets/images/shade-awards-2.png" class="shade-awards shade-awards-2" alt="">
     <div class="container">
-        <div class="title-wrap text-center text-white">
+        <div class="title-wrap text-center text-white wow fadeInUp" data-wow-delay="0.2s">
             <div class="row">
                 <div class="col-lg-12">
                     <h2>Achievements That <strong>Define</strong> Us</h2>

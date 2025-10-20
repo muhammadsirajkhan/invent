@@ -1,6 +1,6 @@
 <section class="vission vision-v2">
     <div class="container">
-        <div class="title-wrap">
+        <div class="title-wrap wow fadeInUp" data-wow-delay="0.2s">
             <div class="row">
                 <div class="col-lg-6 col-12">
                     <h2>Turning Vision <br>into <strong>Reality.</strong></h2>

@@ -1,6 +1,6 @@
 <section class="vission vision-v2 portfolio">
     <div class="container">
-        <div class="title-wrap">
+        <div class="title-wrap wow fadeInUp" data-wow-delay="0.2s">
             <div class="row">
                 <div class="col-lg-6 col-12">
                     <h2>Turning Vision <br>into <strong>Reality.</strong></h2>
@@ -24,7 +24,8 @@
                         </div>
                         <p>This is dummy copy. It is not meant to be read. It has been placed here solely to demonstrate
                             the look and feel of finished, typeset text. Only for show. He who searches for meaning here
-                            will be sorely disappointed.This is dummy copy. It is not meant to be read. It has been placed here solely to demonstrate
+                            will be sorely disappointed.This is dummy copy. It is not meant to be read. It has been
+                            placed here solely to demonstrate
                             the look and feel of finished, typeset text. Only for show. He who searches for meaning here
                             will be sorely disappointed.</p>
                         <a href="#" class="btn btn-primary">View Case Study</a>
@@ -40,7 +41,8 @@
                         </div>
                         <p>This is dummy copy. It is not meant to be read. It has been placed here solely to demonstrate
                             the look and feel of finished, typeset text. Only for show. He who searches for meaning here
-                            will be sorely disappointed.This is dummy copy. It is not meant to be read. It has been placed here solely to demonstrate
+                            will be sorely disappointed.This is dummy copy. It is not meant to be read. It has been
+                            placed here solely to demonstrate
                             the look and feel of finished, typeset text. Only for show. He who searches for meaning here
                             will be sorely disappointed.</p>
                         <a href="#" class="btn btn-primary">View Case Study</a>
@@ -56,7 +58,8 @@
                         </div>
                         <p>This is dummy copy. It is not meant to be read. It has been placed here solely to demonstrate
                             the look and feel of finished, typeset text. Only for show. He who searches for meaning here
-                            will be sorely disappointed.This is dummy copy. It is not meant to be read. It has been placed here solely to demonstrate
+                            will be sorely disappointed.This is dummy copy. It is not meant to be read. It has been
+                            placed here solely to demonstrate
                             the look and feel of finished, typeset text. Only for show. He who searches for meaning here
                             will be sorely disappointed.</p>
                         <a href="#" class="btn btn-primary">View Case Study</a>
@@ -72,7 +75,8 @@
                         </div>
                         <p>This is dummy copy. It is not meant to be read. It has been placed here solely to demonstrate
                             the look and feel of finished, typeset text. Only for show. He who searches for meaning here
-                            will be sorely disappointed.This is dummy copy. It is not meant to be read. It has been placed here solely to demonstrate
+                            will be sorely disappointed.This is dummy copy. It is not meant to be read. It has been
+                            placed here solely to demonstrate
                             the look and feel of finished, typeset text. Only for show. He who searches for meaning here
                             will be sorely disappointed.</p>
                         <a href="#" class="btn btn-primary">View Case Study</a>
@@ -88,7 +92,8 @@
                         </div>
                         <p>This is dummy copy. It is not meant to be read. It has been placed here solely to demonstrate
                             the look and feel of finished, typeset text. Only for show. He who searches for meaning here
-                            will be sorely disappointed.This is dummy copy. It is not meant to be read. It has been placed here solely to demonstrate
+                            will be sorely disappointed.This is dummy copy. It is not meant to be read. It has been
+                            placed here solely to demonstrate
                             the look and feel of finished, typeset text. Only for show. He who searches for meaning here
                             will be sorely disappointed.</p>
                         <a href="#" class="btn btn-primary">View Case Study</a>
@@ -104,7 +109,8 @@
                         </div>
                         <p>This is dummy copy. It is not meant to be read. It has been placed here solely to demonstrate
                             the look and feel of finished, typeset text. Only for show. He who searches for meaning here
-                            will be sorely disappointed.This is dummy copy. It is not meant to be read. It has been placed here solely to demonstrate
+                            will be sorely disappointed.This is dummy copy. It is not meant to be read. It has been
+                            placed here solely to demonstrate
                             the look and feel of finished, typeset text. Only for show. He who searches for meaning here
                             will be sorely disappointed.</p>
                         <a href="#" class="btn btn-primary">View Case Study</a>
@@ -120,7 +126,8 @@
                         </div>
                         <p>This is dummy copy. It is not meant to be read. It has been placed here solely to demonstrate
                             the look and feel of finished, typeset text. Only for show. He who searches for meaning here
-                            will be sorely disappointed.This is dummy copy. It is not meant to be read. It has been placed here solely to demonstrate
+                            will be sorely disappointed.This is dummy copy. It is not meant to be read. It has been
+                            placed here solely to demonstrate
                             the look and feel of finished, typeset text. Only for show. He who searches for meaning here
                             will be sorely disappointed.</p>
                         <a href="#" class="btn btn-primary">View Case Study</a>
@@ -136,7 +143,8 @@
                         </div>
                         <p>This is dummy copy. It is not meant to be read. It has been placed here solely to demonstrate
                             the look and feel of finished, typeset text. Only for show. He who searches for meaning here
-                            will be sorely disappointed.This is dummy copy. It is not meant to be read. It has been placed here solely to demonstrate
+                            will be sorely disappointed.This is dummy copy. It is not meant to be read. It has been
+                            placed here solely to demonstrate
                             the look and feel of finished, typeset text. Only for show. He who searches for meaning here
                             will be sorely disappointed.</p>
                         <a href="#" class="btn btn-primary">View Case Study</a>

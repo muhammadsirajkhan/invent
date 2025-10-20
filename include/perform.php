@@ -1,5 +1,5 @@
 <section class="perform" style="background-image: url('assets/images/services/shade-perform.png');">
-    <div class="title-wrap text-center text-white">
+    <div class="title-wrap text-center text-white wow fadeInUp" data-wow-delay="0.2s">
         <div class="container">
             <div class="row justify-content-center">
                 <div class="col-xl-12 col-12">
