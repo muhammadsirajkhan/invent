@@ -8,7 +8,7 @@
     </div> -->
     <div class="inner-banner banner-service">
         <div class="container">
-            <div class="row justify-content-center">
+            <div class="row justify-content-center gy-5">
                 <div class="col-lg-6 col-12">
                     <div class="banner-inner">
                         <h2>Build Seamless iOS Apps Power <strong>Your Vision</strong></h2>
@@ -19,7 +19,7 @@
                 </div>
                 <div class="col-lg-6 col-12">
                     <div class="icon">
-                        <img src="assets/images/services/banner.png" alt="">
+                        <img src="assets/images/tech/tech-edit.png" alt="">
                     </div>
                 </div>
             </div>

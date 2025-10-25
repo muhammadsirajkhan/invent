@@ -2681,6 +2681,7 @@ img.ceo-bg {
 
 .core-sec {
     position: relative;
+    overflow-x: hidden;
 }
 
 .banner-service .icon {
