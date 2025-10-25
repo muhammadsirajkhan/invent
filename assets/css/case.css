@@ -1,0 +1,205 @@
+.wrapper{
+    overflow-x: hidden;
+}
+
+.case-bann {
+    background-color: #F5F5F5;
+    padding-top: 220px;
+}
+
+.case-bann .icon img {
+    width: 100%;
+    aspect-ratio: 1440/647;
+    object-fit: cover;
+    object-position: center;
+}
+
+.case-bann .sub-title {
+    font-size: var(--font-size-lg);
+    color: var(--primary-color);
+}
+
+.case-bann .small-title {
+    font-size: var(--font-size-lg);
+}
+
+.case-bann .small-title, .case-bann .sub-title {
+    display: block;
+}
+
+.case-bann h1 {
+    font-size: var(--font-size-72);
+    margin: 0;
+}
+section.challenge {
+    /* background-color: #F5F5F5; */
+    padding-top: var(--spacing-5xl);
+    /* padding-bottom: var(--spacing-5xl); */
+}
+.challenge {}
+
+.challenge .icon img {
+    aspect-ratio: 1460/678;
+    width: 100%;
+    object-fit: cover;
+    object-position: center;
+}
+.challenge .info span {
+    display: block;
+    font-size: 18px;
+    margin: 0;
+}
+
+.challenge .info {
+    margin-bottom: 50px;
+}
+
+.challenge .info .sub-title {
+    color: var(--primary-color);
+    font-weight: 800;
+    margin-bottom: 10px;
+}
+
+.challenge .info:last-child {
+    margin: 0;
+}
+
+.challenge .content h2 {
+    font-size: var(--font-size-6xl);
+    margin-bottom: 30px;
+}
+
+.challenge .content p{
+    font-size: var(--font-size-lg);
+}
+
+.case-content h2 {
+    font-size: var(--font-size-6xl);
+}
+.case-content h2 strong{
+    color: var(--primary-color);
+}
+.case-content p {
+    font-size: var(--font-size-lg);
+    line-height: var(--line-height-relaxed);
+}
+.text-white.case-content p {
+    color: #fff;
+}
+.project {
+    background-color: #000;
+    position: relative;
+    padding-top: var(--spacing-5xl);
+    /* padding-bottom: var(--spacing-5xl); */
+}
+.project .container {
+    position: relative;
+    z-index: 1;
+}
+.project .bg-project {
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    top: 0;
+    left: 0;
+}
+
+.project .bg-project img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.project .case-content {
+     padding-bottom: var(--spacing-5xl);
+}
+
+.experience {
+    background-color: #F5F5F5;
+    padding-top: var(--spacing-5xl);
+}
+
+.branding {
+    padding-top: var(--spacing-5xl);
+    padding-bottom: var(--spacing-5xl);
+}
+
+.play-card {
+    background-color: #F5F5F5;
+    padding: 70px 40px;
+    border-radius: 20px;
+}
+
+.play-card h2 {
+    font-size: var(--font-size-2xl);
+    margin-bottom: 35px;
+}
+.tools {
+    /* background-color: #000; */
+    position: relative;
+    padding-top: var(--spacing-5xl);
+}
+.tools .bg {position: absolute;top: 0;left: 0;width: 100%;height: 70%;}
+
+.tools .bg img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.tools .container, .tools .icon {
+    position: relative;
+    z-index: 1;
+}
+.cs-content p {
+    font-size: var(--font-size-2xl);
+}
+
+.client-say-wrap {
+    position: relative;
+    padding-top: 60px;
+}
+.client-say-wrap img {
+    position: absolute;
+    top: -75px;
+    left: 70px;
+}
+
+.cs-content {
+    position: relative;
+    z-index: 1;
+    padding-bottom: 20px;
+}
+.client-say {
+    padding-bottom: var(--spacing-5xl);
+    margin-top: -110px;
+    position: relative;
+    z-index: 1;
+}
+
+.client-say-wrap .name, .client-say-wrap .position {
+    display: block;
+    font-size: var(--font-size-2xl);
+}
+.client-say-wrap .name{
+    color: var(--primary-color);
+    font-weight: 600;
+}
+
+.sub-banner {
+    position: relative;
+}
+
+.sub-banner .bg img {
+    width: 100%;
+    height: auto;
+}
+
+.sub-banner .sub-wrap {
+    position: absolute;
+    top: 50%;
+    z-index: 1;
+    transform: translateY(-50%);
+    width: 100%;
+}
+

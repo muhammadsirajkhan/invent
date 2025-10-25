@@ -36,7 +36,7 @@ $services = [
 
 <section class="services">
     <div class="container">
-        <div class="title-wrap">
+        <div class="title-wrap wow fadeInUp" data-wow-delay="0.2s">
             <div class="row">
                 <div class="col-lg-6 col-12">
                     <h2>Elevating Your <br>Brand With <strong>Exceptional Design.</strong></h2>
@@ -51,7 +51,7 @@ $services = [
         <div class="service-outer">
             <div class="row gy-4">
                 <?php foreach ($services as $service): ?>
-                    <div class="col-lg-4 col-12">
+                    <div class="col-xl-4 col-lg-6 col-12">
                         <div class="service-card edge edge-base edge-primary">
                             <div class="title">
                                 <div class="icon">

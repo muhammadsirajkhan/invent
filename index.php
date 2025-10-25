@@ -11,7 +11,7 @@
     <div class="banner">
         <div class="container">
             <div class="row justify-content-center">
-                <div class="col-lg-9 col-12">
+                <div class="col-lg-9 col-12 wow wow fadeInUp" data-wow-delay="0.2s">
                     <div class="banner-inner">
                         <h1>From concept to code <strong>we build apps</strong> that people love to use</h1>
                         <p>This is dummy copy. It is not meant to be read. It has been placed here solely to demonstrate
@@ -25,13 +25,13 @@
     <div class="colab-sec">
         <div class="container-fluid">
             <div class="row align-items-stretch">
-                <div class="col-lg-2 col-12">
+                <div class="col-xl-3 col-12">
                     <div class="colab-content">
                         <span class="title">We Collaborated with</span>
                         <span class="number"><strong>1,000+</strong> Company</span>
                     </div>
                 </div>
-                <div class="col-lg-10 col-12">
+                <div class="col-xl-9 col-12">
                     <div class="colab-slider-outer">
                         <div class="swiper colab-slider">
                             <div class="swiper-wrapper">

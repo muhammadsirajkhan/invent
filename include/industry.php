@@ -1,6 +1,6 @@
 <section class="industry">
     <div class="container">
-        <div class="title-wrap">
+        <div class="title-wrap wow fadeInUp" data-wow-delay="0.2s">
             <div class="row">
                 <div class="col-lg-6 col-12">
                     <h2>Transforming Every <strong>Industry</strong></h2>

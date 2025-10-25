@@ -1,4 +1,5 @@
 // Main JavaScript file for TekInvent website
+new WOW().init();
 
 document.addEventListener("DOMContentLoaded", function () {
   // Initialize all components
@@ -546,11 +547,38 @@ function initSwiper() {
       768: {
         slidesPerView: 2,
       },
-      1024: {
+      1280: {
+        slidesPerView: 2.3,
+      },
+    },
+  });
+  const preferSlider = new Swiper(".prefer-slider", {
+    slidesPerView: 1,
+    spaceBetween: 30,
+    loop: false,
+    // autoplay: {
+    //   delay: 5000,
+    //   disableOnInteraction: false,
+    // },
+    navigation: {
+      nextEl: ".prefer-button-next",
+      prevEl: ".prefer-button-prev",
+    },
+    breakpoints: {
+      768: {
+        slidesPerView: 2,
+      },
+      1280: {
+        slidesPerView: 2.4,
+      },
+      1440: {
+        slidesPerView: 2.6,
+      },
+      1600: {
         slidesPerView: 3,
       },
       1920: {
-        slidesPerView: 2.3,
+        slidesPerView: 3.6,
       },
     },
   });
@@ -570,8 +598,8 @@ function initSwiper() {
       768: {
         slidesPerView: 1,
       },
-      1024: {
-        slidesPerView: 1,
+      1280: {
+        slidesPerView: 2,
       },
       1920: {
         slidesPerView: 2,
@@ -581,11 +609,12 @@ function initSwiper() {
   const awardSlider = new Swiper(".award-slider", {
     slidesPerView: 1,
     spaceBetween: 30,
-    loop: false,
-    // autoplay: {
-    //   delay: 5000,
-    //   disableOnInteraction: false,
-    // },
+    loop: true,
+    speed: 1000,
+    autoplay: {
+      delay: 1500,
+      disableOnInteraction: false,
+    },
     navigation: {
       nextEl: ".awards-button-next",
       prevEl: ".awards-button-prev",
@@ -597,7 +626,7 @@ function initSwiper() {
       1024: {
         slidesPerView: 3,
       },
-      1920: {
+      1280: {
         slidesPerView: 5,
       },
     },
@@ -626,7 +655,7 @@ function initSwiper() {
       },
     },
   });
-  const colabSlider = new Swiper(".colab-slider", {
+  const relatedSlider = new Swiper(".related-slider", {
     slidesPerView: 1,
     spaceBetween: 30,
     loop: false,
@@ -635,8 +664,8 @@ function initSwiper() {
     //   disableOnInteraction: false,
     // },
     navigation: {
-      nextEl: ".blog-button-next",
-      prevEl: ".blog-button-prev",
+      nextEl: ".related-button-next",
+      prevEl: ".related-button-prev",
     },
     breakpoints: {
       768: {
@@ -646,20 +675,71 @@ function initSwiper() {
         slidesPerView: 3,
       },
       1920: {
+        slidesPerView: 3,
+      },
+    },
+  });
+  const colabSlider = new Swiper(".colab-slider", {
+    slidesPerView: 2,
+    spaceBetween: 30,
+    loop: true,
+    speed: 3000,
+    // autoplay: {
+    //   delay: 2500,
+    //   disableOnInteraction: false,
+    // },
+    allowTouchMove: false,
+    autoplay: {
+      delay: 0, // 1 millisecond delay: we’re moving nonstop. Try 0 here too :).
+      disableOnInteraction: false, // If someone tries to touch, let them fail in peace
+    },
+    navigation: {
+      nextEl: ".blog-button-next",
+      prevEl: ".blog-button-prev",
+    },
+    breakpoints: {
+      768: {
+        slidesPerView: 2,
+      },
+      1024: {
+        slidesPerView: 4,
+      },
+      1280: {
+        slidesPerView: 3.5,
+      },
+      1366: {
+        slidesPerView: 4.5,
+      },
+      1600: {
         slidesPerView: 5.5,
       },
     },
   });
 
   var processSlider = new Swiper(".process-slider", {
-    direction: "vertical",
-    slidesPerView: 2.2,
+    direction: "horizontal",
+    slidesPerView: 1,
     spaceBetween: 30,
     loop: false,
     mousewheel: true,
     pagination: {
       el: ".process-pagination",
       clickable: true,
+    },
+    breakpoints: {
+      375: {
+        slidesPerView: 1.2,
+      },
+      768: {
+        slidesPerView: 2,
+      },
+      992: {
+        slidesPerView: 1,
+      },
+      1200: {
+        slidesPerView: 2.2,
+        direction: "vertical",
+      },
     },
   });
 
@@ -671,12 +751,52 @@ function initSwiper() {
   if (handle && draggableControl) {
     const industrySwiper = new Swiper(".industry-slider", {
       loop: false,
-      slidesPerView: 3.8,
+      slidesPerView: 1,
       spaceBetween: 20,
       resistanceRatio: 0,
-      allowTouchMove: false, // Disable direct slider dragging
-      simulateTouch: false, // Disable mouse drag on slider
-      touchRatio: 0, // Disable touch sensitivity on slider
+      allowTouchMove: true, // Disable direct slider dragging
+      simulateTouch: true, // Disable mouse drag on slider
+      touchRatio: 1, // Disable touch sensitivity on slider
+      breakpoints: {
+        375: {
+          slidesPerView: 1.2,
+        },
+        768: {
+          slidesPerView: 2,
+          resistanceRatio: 0,
+          allowTouchMove: false, // Disable direct slider dragging
+          simulateTouch: false, // Disable mouse drag on slider
+          touchRatio: 0,
+        },
+        1024: {
+          slidesPerView: 3,
+          resistanceRatio: 0,
+          allowTouchMove: false, // Disable direct slider dragging
+          simulateTouch: false, // Disable mouse drag on slider
+          touchRatio: 0,
+        },
+        1280: {
+          slidesPerView: 3,
+          resistanceRatio: 0,
+          allowTouchMove: false, // Disable direct slider dragging
+          simulateTouch: false, // Disable mouse drag on slider
+          touchRatio: 0,
+        },
+        1366: {
+          slidesPerView: 3.5,
+          resistanceRatio: 0,
+          allowTouchMove: false, // Disable direct slider dragging
+          simulateTouch: false, // Disable mouse drag on slider
+          touchRatio: 0,
+        },
+        1600: {
+          slidesPerView: 3.8,
+          resistanceRatio: 0,
+          allowTouchMove: false, // Disable direct slider dragging
+          simulateTouch: false, // Disable mouse drag on slider
+          touchRatio: 0,
+        },
+      },
     });
 
     console.log("🎯 Industry Swiper initialized:", {
@@ -1002,5 +1122,69 @@ function updateTOCActiveState() {
     } else {
       link.classList.remove("active");
     }
+  });
+}
+
+// ============================================
+// NUMBER COUNTER FUNCTIONALITY
+// ============================================
+
+function animateCounter(element) {
+  const target = parseInt(element.dataset.target);
+  const duration = 2000; // Animation duration in milliseconds (2 seconds)
+  const startTime = performance.now();
+  const startValue = 0;
+
+  // Add suffix support (e.g., "+" or "%" or "K")
+  const suffix = element.dataset.suffix || '';
+
+  // Format number with leading zero for single digits
+  const formatNumber = (num) => {
+    if (num < 10) {
+      return '0' + num;
+    }
+    return num.toString();
+  };
+
+  const updateCounter = (currentTime) => {
+    const elapsed = currentTime - startTime;
+    const progress = Math.min(elapsed / duration, 1);
+
+    // Easing function for smoother animation (easeOutExpo)
+    const easeOutExpo = progress === 1 ? 1 : 1 - Math.pow(2, -10 * progress);
+    
+    const current = Math.round(startValue + (target - startValue) * easeOutExpo);
+    element.textContent = formatNumber(current) + suffix;
+
+    if (progress < 1) {
+      requestAnimationFrame(updateCounter);
+    } else {
+      element.textContent = formatNumber(target) + suffix; // Ensure final value is exact
+    }
+  };
+
+  requestAnimationFrame(updateCounter);
+}
+
+// Intersection Observer to trigger animation on scroll for all counter elements
+const counterElements = document.querySelectorAll('.counter');
+
+if (counterElements.length > 0) {
+  const counterObserver = new IntersectionObserver(
+    (entries) => {
+      entries.forEach((entry) => {
+        if (entry.isIntersecting && !entry.target.classList.contains('counted')) {
+          entry.target.classList.add('counted'); // Prevent re-animation
+          animateCounter(entry.target);
+          counterObserver.unobserve(entry.target); // Stop observing once animated
+        }
+      });
+    },
+    { threshold: 0.3 } // Trigger when 30% of element is visible
+  );
+
+  // Observe all counter elements
+  counterElements.forEach((counter) => {
+    counterObserver.observe(counter);
   });
 }

@@ -1,6 +1,6 @@
 <section class="clients-section">
     <div class="container">
-        <div class="title-wrap text-center">
+        <div class="title-wrap text-center wow fadeInUp" data-wow-delay="0.2s">
             <div class="row justify-content-center">
                 <div class="col-lg-8 col-12">
                     <h2>Hear What Our <strong>Clients</strong> Say About Invent</h2>

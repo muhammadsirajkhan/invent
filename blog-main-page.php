@@ -52,10 +52,12 @@
                             <div class="col-lg-4 col-12">
                                 <div class="blog-card">
                                     <div class="icon edge edge-base">
-                                        <img src="assets/images/sample.png" alt="">
+                                        <a href="#"><img src="assets/images/sample.png" alt=""></a>
                                     </div>
                                     <div class="title">
-                                        <h2>Dummy Title of Blog</h2>
+                                        <a href="#">
+                                            <h2>Dummy Title of Blog</h2>
+                                        </a>
                                         <span class="date">02 October, 2025</span>
                                     </div>
                                     <p>This is dummy copy. It is not meant to be read. This is dummy copy. It is not

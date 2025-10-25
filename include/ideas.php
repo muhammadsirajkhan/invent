@@ -2,7 +2,7 @@
     <div class="container">
         <div class="row justify-content-center">
             <div class="col-lg-7 col-12">
-                <div class="title-wrap text-center">
+                <div class="title-wrap text-center wow fadeInUp" data-wow-delay="0.2s">
                     <h2>Powering your ideas into <strong>digital reality</strong></h2>
                 </div>
             </div>

@@ -1,6 +1,6 @@
-<section class="vission">
-    <div class="container-fluid">
-        <div class="title-wrap">
+<section class="vission <?php echo $grey ? '' : 'bg-white'; ?>">
+    <div class="container">
+        <div class="title-wrap wow fadeInUp" data-wow-delay="0.2s">
             <div class="row">
                 <div class="col-lg-6 col-12">
                     <h2>Turning Vision <br>into <strong>Reality.</strong></h2>
@@ -12,6 +12,8 @@
                 </div>
             </div>
         </div>
+    </div>
+    <div class="container-fluid">
         <div class="vision-outer">
             <div class="swiper vision-slider">
                 <div class="swiper-wrapper">

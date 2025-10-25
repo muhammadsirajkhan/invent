@@ -1,6 +1,6 @@
 <section class="design-section">
     <div class="container">
-        <div class="title-wrap">
+        <div class="title-wrap wow fadeInUp" data-wow-delay="0.2s">
             <div class="row">
                 <div class="col-lg-6 col-12">
                     <h2>Elevating Your Brand With <strong>Exceptional Design.</strong></h2>
@@ -13,7 +13,7 @@
             </div>
         </div>
         <div class="design-outer">
-            <div class="row">
+            <div class="row gy-4">
                 <div class="col-lg-5 col-12">
                     <div class="design-left edge edge-base edge-primary">
                         <img src="assets/images/sample-2.png" alt="Design Image 1" class="design-img">
