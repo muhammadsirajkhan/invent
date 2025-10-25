@@ -6,7 +6,7 @@
             <source src="assets/images/sample-video.mp4" type="video/mp4">
         </video>
     </div> -->
-    <div class="banner banner-service">
+    <div class="inner-banner banner-service">
         <div class="container">
             <div class="row justify-content-center">
                 <div class="col-lg-6 col-12">

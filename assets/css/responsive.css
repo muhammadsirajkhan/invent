@@ -153,7 +153,8 @@
         aspect-ratio: 625 / 445;
     }
 
-    .zigzag.separate .container {
+    .zigzag.separate .container,
+    .project .container {
         max-width: calc(50vw + (1163px / 2));
         margin-right: 0;
         /* max-width: 100%; */
@@ -220,6 +221,18 @@
 }
 
 @media only screen and (min-width: 100px) and (max-width: 1199px) {
+    .banner-service {
+        padding-top: calc(var(--spacing-120) + 50px);
+        padding-bottom: 0;
+    }
+
+    .banner-sec.inner-service {
+        padding: 0;
+        aspect-ratio: 1453/946;
+    }
+.service-bottom .image {
+    position: relative;
+}
     .footer-contact-item {
         padding-left: 0;
     }

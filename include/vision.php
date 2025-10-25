@@ -1,4 +1,4 @@
-<section class="vission">
+<section class="vission <?php echo $grey ? '' : 'bg-white'; ?>">
     <div class="container">
         <div class="title-wrap wow fadeInUp" data-wow-delay="0.2s">
             <div class="row">
